@@ -1,0 +1,22 @@
+@use 'global' as *;
+
+.img-wrap {
+width: 100%;
+position: relative;
+}
+.img-wrap::before {
+content:
+;
+display: block;
+padding-top: 56.25%; /* 高さと幅の比を16:9に固定。9/16*100=56.25 */
+}
+.img-wrap img {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+object-fit: cover;
+width: 100%;
+height: 100%;
+object-position: center;
+}
