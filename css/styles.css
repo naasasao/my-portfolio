@@ -178,6 +178,7 @@ select::-ms-expand {
   max-width: 56.25rem;
   width: 100%;
   margin: 0 auto;
+  padding: 25px;
 }
 
 .about-me__contents {
@@ -303,6 +304,7 @@ select::-ms-expand {
   max-width: 68.75rem;
   width: 100%;
   margin: 0 auto;
+  padding: 25px;
 }
 
 .works__contents {
