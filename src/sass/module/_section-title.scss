@@ -1,0 +1,10 @@
+@use 'global' as *;
+
+.section-title {
+    text-align: center;
+}
+
+.section-title__index {
+    font-size: rem(48);
+    color: blue;
+}

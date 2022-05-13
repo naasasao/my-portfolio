@@ -1,0 +1,15 @@
+@use 'global' as *;
+
+.message {
+    // background-color: yellow;
+    padding: rem(40);
+}
+
+.message__inner {
+    text-align: center;
+}
+
+.message__text {
+    color: $white;
+}
+

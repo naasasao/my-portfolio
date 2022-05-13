@@ -1,0 +1,11 @@
+@use 'global' as *;
+
+.button {
+    display: inline-block;
+    font-size: rem(24);
+    color: $white;
+    background-color: blue;
+    border-radius: rem(24);
+    padding: rem(8) rem(32);
+
+}
