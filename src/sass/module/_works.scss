@@ -17,19 +17,8 @@
     flex-wrap: wrap;
 }
 
-// .works__content {
-//     padding: rem(8);
-// }
 
-// .works__content:nth-child(n + 2) {
-//     margin-top: rem(24);
-// }
-
-// .works__content:nth-child(2n) {
-//     margin-left: rem(24);
-// }
-
-// インライン
+//aタグ
 .works__image {
     width: 40%;
     position: relative;
@@ -62,6 +51,6 @@
 }
 
 .works__button {
-    margin-top: rem(32);
+    margin-top: rem(48);
     text-align: center;
 }

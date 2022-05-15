@@ -1,2 +1,23 @@
 @use 'global' as *;
 
+.concept {
+
+}
+
+.concept__inner {
+    max-width: rem(900);
+    width: 100%;
+    margin: 0 auto;
+    padding: $padding-pc;
+}
+
+.concept__contents {
+    margin-top: rem(24);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.concept__explain {
+
+}
+
