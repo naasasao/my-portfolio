@@ -18,6 +18,28 @@
 }
 
 .concept__explain {
+    margin-top: rem(48);
+    display: flex;
+}
+
+.concept__explain:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.concept__image {
+    width: 50%;
+}
+
+.concept__textBox {
+    width: 50%;
+    padding: rem(32);
+}
+
+
+.concept__heading {
 
 }
 
+.concept__text {
+
+}

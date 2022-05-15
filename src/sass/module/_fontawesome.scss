@@ -1,0 +1,7 @@
+@use 'global' as *;
+
+.fontawesome::before {
+    font-family: "Font Awesome 5 Free"; /*←ココ！！！！！！！*/
+    font-weight: 400;
+    content: "\f779";
+  }
