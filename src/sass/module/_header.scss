@@ -2,45 +2,66 @@
 
 .header {
     background-color: $white;
-    border: rem(8) solid $accent;
+    border: rem(2) solid $accent;
+    z-index: 11111;
+    width: 100%;
+    transition: background-color .8s;
+    height: 100px;
 }
 
 .header__inner {
     display: flex;
-    padding: rem(20);
+    padding: 0 rem(16);
+    height: inherit;
 }
 
 .header__logo {
-    width: rem(120);
+    width: rem(100);
+    display: flex;
+    align-items: center;
 }
 
 // pcのheaderメニュー
 .header__pc-nav {
-
+    margin-left: auto;
+    height: inherit;
 }
 
 .header__pc-nav__items {
     display: flex;
     align-items: center;
-    margin-left: auto;
+    height: inherit;
 }
 
 .header__pc-nav__item {
-
+    height: inherit;
 }
 
 .header__pc-nav__item a {
-    display: inline-block;
     color: blue;
+    height: inherit;
     font-size: rem(16);
-    padding-left: rem(24);
-    padding-top: rem(20);
-    padding-bottom: rem(20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 rem(12);
+    position: relative;
 
-    @include mq('md') {
+@include mq('md') {
        display: none; 
     }
 }
 
 // spのモーダルメニュー
+.header__sp-nav {
+    margin-left: auto;
+    display: none;
+}
 
+.header__sp-nav__items {
+
+}
+
+.header__sp-nav__item {
+
+}

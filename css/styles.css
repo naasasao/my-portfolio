@@ -246,6 +246,9 @@ select::-ms-expand {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .concept__explain:nth-child(2n) {
@@ -310,6 +313,8 @@ select::-ms-expand {
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
+    margin-left: auto;
+    margin-right: 1.5rem;
   }
 }
 
@@ -363,49 +368,81 @@ top
 
 .header {
   background-color: #fff;
-  border: 8px solid yellow;
-  border: 0.5rem solid yellow;
+  border: 2px solid yellow;
+  border: 0.125rem solid yellow;
+  z-index: 11111;
+  width: 100%;
+  -webkit-transition: background-color 0.8s;
+  transition: background-color 0.8s;
+  height: 100px;
 }
 
 .header__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 20px;
-  padding: 1.25rem;
+  padding: 0 16px;
+  padding: 0 1rem;
+  height: inherit;
 }
 
 .header__logo {
-  width: 120px;
-  width: 7.5rem;
-}
-
-.header__lists {
+  width: 100px;
+  width: 6.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: auto;
 }
 
-.header__list a {
-  display: inline-block;
+.header__pc-nav {
+  margin-left: auto;
+  height: inherit;
+}
+
+.header__pc-nav__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: inherit;
+}
+
+.header__pc-nav__item {
+  height: inherit;
+}
+
+.header__pc-nav__item a {
   color: blue;
+  height: inherit;
   font-size: 16px;
   font-size: 1rem;
-  padding-left: 24px;
-  padding-left: 1.5rem;
-  padding-top: 20px;
-  padding-top: 1.25rem;
-  padding-bottom: 20px;
-  padding-bottom: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 12px;
+  padding: 0 0.75rem;
+  position: relative;
 }
 @media screen and (max-width: 768px) {
-  .header__list a {
+  .header__pc-nav__item a {
     display: none;
   }
+}
+
+.header__sp-nav {
+  margin-left: auto;
+  display: none;
 }
 
 .inner {
