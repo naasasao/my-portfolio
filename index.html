@@ -25,23 +25,47 @@
   <script defer src="./js/script.js"></script>
 </head>
 <body>
+
 <!-- headerー -->
 <header class="header">
   <div class="header__inner">
-    <h2 class="header__logo"></h2>
-    <ul class="header__lists">
-      <li class="header__list"><a href=""></a></li>
-      <li class="header__list"><a href=""></a></li>
-      <li class="header__list"><a href=""></a></li>
-      <li class="header__list"><a href=""></a></li>
-    </ul>
+
+    <h2 class="header__logo">
+      <img src="./images/bird.jpg" alt="">
+    </h2>
+
+    <!-- hamburger -->
+    <button class="hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="header__sp-nav js-drawer-menu">
+      <ul class="header__sp-nav__items" id="nav">
+          <li class="header__sp-nav__item"><a class="link" href="">お知らせ</a></li>
+          <li class="header__sp-nav__item"><a class="link" href="">事業内容</a></li>
+          <li class="header__sp-nav__item"><a class="link" href="">制作実績</a></li>
+          <li class="header__sp-nav__item"><a class="link" href="">企業概要</a></li>
+          <li class="header__sp-nav__item"><a class="link" href="">ブログ</a></li>
+          <li class="header__sp-nav__item"><a class="link" href="">お問い合わせ</a></li>
+      </ul>
+  </div>
+
+  <div class="header__pc-nav">
+      <ul class="header__pc-nav__items">
+          <li class="header__pc-nav__item"><a href="#">お知らせ</a></li>
+          <li class="header__pc-nav__item"><a href="#">事業内容</a></li>
+          <li class="header__pc-nav__item"><a href="#">制作実績</a></li>
+          <li class="header__pc-nav__item"><a href="#">企業概要</a></li>
+          <li class="header__pc-nav__item"><a href="#">ブログ</a></li>
+          <li class="header__pc-nav__item header__pc-nav-item--white"><a href="#">お問い合わせ</a></li>
+      </ul>
+  </div>
+
   </div>
 </header>
 
-<!-- hamburger -->
-<div class="hamburger js-hamburger">
-
-</div>
 
 <!-- MV -->
 <div class="mv">
@@ -70,9 +94,9 @@
         <div class="about-me__explain">
           <p class="about-me__text">
             はじめまして！ちーやんと申します。<br>
-            北海道出身、大阪府在住の1児の母です。工学部卒です。会社員として6年間勤務していました。<br>
-            元々プログラミングに興味があり、思い切ってコーディングに挑戦したところ見事にハマりました。日々、どうしたらうまく書けるか、ググってググってググる日々です。<br>
-            モノづくりに熱意を持ってお仕事させていただいております。
+            大阪府在住の1児の母で、工学部卒です。会社員として6年間勤務していました。現在はWebコーダーとしてお仕事をいただいております。<br>
+            元々プログラミングに興味があり、コーディングに挑戦したところその面白さに魅了されました。同時に、難しさにも直面する日々です。どうしたらうまく書けるのかひたすら調べています。<br>
+            モノづくりに熱意を持って取り組んでおります。
           </p>
         </div>
       </div><!--about-me__contents-->
@@ -130,8 +154,8 @@
           <div class="concept__textBox">
             <h3 class="concept__heading">素早いレスポンス</h3>
             <p class="concept__text">
-              進捗状況をお伝えし、常に作業状況の「見える化」を意識しています。<br>
-              
+              進捗状況をお伝えし、常に作業の「見える化」を意識しています。<br>
+              対面以外にテキストコミュニケーションが主流になってきた今だからこそ、きちんとお伝えします。
             </p>
           </div>
         </div>
@@ -142,8 +166,8 @@
           <div class="concept__textBox">
             <h3 class="concept__heading">気持ちに寄り添う</h3>
             <p class="concept__text">
-              コミュニケーションを大切にしています。<br>
-              
+              「何をしているかわからない」というのはコミュニケーション不足であると考えます。<br>
+              ちょっとした疑問や些細な事もお答えし、ご自身の思いに寄り添います。
             </p>
           </div>
         </div>
@@ -152,10 +176,10 @@
             <img src="./images/bird.jpg" alt="">
           </div>
           <div class="concept__textBox">
-            <h3 class="concept__heading">気持ちに寄り添う</h3>
+            <h3 class="concept__heading">高い柔軟性</h3>
             <p class="concept__text">
-              進捗状況をお伝えし、常に作業状況の「見える化」を意識しています。<br>
-              
+              決まった型を設けず、より良い方法を常に模索しています。<br>
+              外部の意見を取り入れることを大切にし、進行中にイレギュラーが起こった場合には代替案をご提案します。
             </p>
           </div>
         </div>

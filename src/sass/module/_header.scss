@@ -1,2 +1,46 @@
 @use 'global' as *;
 
+.header {
+    background-color: $white;
+    border: rem(8) solid $accent;
+}
+
+.header__inner {
+    display: flex;
+    padding: rem(20);
+}
+
+.header__logo {
+    width: rem(120);
+}
+
+// pcのheaderメニュー
+.header__pc-nav {
+
+}
+
+.header__pc-nav__items {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.header__pc-nav__item {
+
+}
+
+.header__pc-nav__item a {
+    display: inline-block;
+    color: blue;
+    font-size: rem(16);
+    padding-left: rem(24);
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+
+    @include mq('md') {
+       display: none; 
+    }
+}
+
+// spのモーダルメニュー
+
