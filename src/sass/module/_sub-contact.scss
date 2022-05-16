@@ -1,0 +1,88 @@
+@use 'global' as *;
+
+.sub-contact {
+    background-color: red;
+}
+
+.sub-contact__inner {
+    max-width: rem(900);
+    width: 100%;
+    margin: 0 auto;
+    padding: $padding-pc;
+}
+
+.sub-contact__message {
+    margin-top: rem(32);
+    text-align: center;
+}
+
+.sub-contact__items {
+    margin-top: rem(32);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sub-contact__item {
+    display: flex;
+    flex-direction: column;
+    @include mq('md') {
+        flex-direction: column; 
+    }
+}
+
+.sub-contact__item input {
+    margin-top: rem(16);
+    border: rem(2) solid $accent;
+    background-color: $white;
+    color: #979797;
+    font-size: rem(14);
+    width: 100%;
+    padding: rem(8) rem(8);
+}
+
+.sub-contact__button {
+    margin-top: rem(32);
+    text-align: center;
+}
+
+.sub-contact__button button {
+    padding: rem(24) rem(64);
+    color: $white;
+    background-color: blue;
+    border-radius: rem(10);
+}
+
+
+
+
+// コピペ// コピペ// コピペ// コピペ// コピペ// コピペ// コピペ
+.sub-contact__item + .sub-contact__item {
+    margin-top: rem(32);
+    @include mq('md') {
+       margin-top: rem(42); 
+    }
+}
+
+.sub-contact__item label {
+    font-size: rem(14);
+    color: $black;
+    @include mq('md') {
+       width: rem(160); 
+       white-space: nowrap;
+       padding-top: rem(20);
+    }
+}
+
+
+.sub-contact__item textarea {
+    margin-top: rem(16);
+    background-color: $white;
+    color: #979797;
+    font-size: rem(14);
+    width: 100%;
+    padding: rem(8) rem(8) rem(8) rem(8);
+    @include mq('md') {
+        margin-left: rem(24); 
+     } 
+}

@@ -1,7 +1,5 @@
 @use 'global' as *;
 
-@use 'global' as *;
-
 .contact {
 
 }
@@ -21,6 +19,11 @@
 
 .contact__message {
 
+}
+
+.contact__button {
+    margin-top: rem(48);
+    text-align: center;
 }
 
 

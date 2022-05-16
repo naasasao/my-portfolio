@@ -1,8 +1,8 @@
 @use 'global' as *;
 
 .header {
-    background-color: $white;
-    border: rem(2) solid $accent;
+    background-color: $accent;
+    // border: rem(2) solid $accent;
     z-index: 11111;
     width: 100%;
     transition: background-color .8s;
