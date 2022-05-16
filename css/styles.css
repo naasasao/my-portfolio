@@ -705,6 +705,8 @@ top
 .sub-contact__item input {
   margin-top: 16px;
   margin-top: 1rem;
+  border: 2px solid yellow;
+  border: 0.125rem solid yellow;
   background-color: #fff;
   color: #979797;
   font-size: 14px;
