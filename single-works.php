@@ -1,66 +1,4 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="format-detection" content="telephone=no" />
-  <!-- meta情報 -->
-  <title>My Portfolio</title>
-  <meta name="description" content="" />
-  <meta name="keywords" content="" />
-  <!-- ogp -->
-  <meta property="og:title" content="" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:site_name" content="" />
-  <meta property="og:description" content="" />
-  <!-- ファビコン -->
-  <link rel="”icon”" href="" />
-  <!-- css -->
-  <link rel="stylesheet" href="./css/styles.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-  <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script defer src="./js/script.js"></script>
-</head>
-<body>
-
-<!-- headerー -->
-<header class="header">
-  <div class="header__inner">
-
-    <h2 class="header__logo">
-      <img src="./images/bird.jpg" alt="">
-    </h2>
-
-    <div class="header__pc-nav">
-        <ul class="header__pc-nav__items">
-            <li class="header__pc-nav__item"><a href="#">about me</a></li>
-            <li class="header__pc-nav__item"><a href="#">works</a></li>
-            <li class="header__pc-nav__item"><a href="#">concept</a></li>
-            <li class="header__pc-nav__item"><a href="#">contact</a></li>
-        </ul>
-    </div>
-
-    <div class="header__sp-nav js-drawer-menu">
-      <ul class="header__sp-nav__items" id="nav">
-          <li class="header__sp-nav__item"><a class="link" href="">about me</a></li>
-          <li class="header__sp-nav__item"><a class="link" href="">works</a></li>
-          <li class="header__sp-nav__item"><a class="link" href="">concept</a></li>
-          <li class="header__sp-nav__item"><a class="link" href="">contact</a></li>
-      </ul>
-    </div>
-
-    <!-- hamburger -->
-    <button class="hamburger js-hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-  
-  </div>
-</header>
+<?php get_header(); ?>
 
 <div class="breadcrumb">
 
@@ -133,32 +71,7 @@
 
 
 <!-- contact -->
-<section class="contact section-layout">
-    <div class="section-title">
-      <h2 class="section-title__index">contact</h2>
-    </div>
-    <div class="contact__inner">
-        <div class="contact__contents">
-          <p class="contact__message">
-            制作のご依頼やご相談、料金のお見積り等、お気軽にお問い合わせください！<br>
-            お送りいただいた内容を確認後、2日以内にお返事させていただきます。
-          </p>
-        </div>
-        <div class="contact__button">
-          <a href="" class="button">VIEW MORE</a>
-        </div>
-    </div>
-  </section>
+<?php get_template_part('common/contact'); ?>
   
-  <!-- footer -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <ul class="footer__nav">
-          <li class="footer__nav-item"><a href="#">about me</a></li>
-          <li class="footer__nav-item"><a href="#">works</a></li>
-          <li class="footer__nav-item"><a href="#">concept</a></li>
-          <li class="footer__nav-item"><a href="#">contact</a></li>
-      </ul>
-    </div>
-  </footer>
-  
+<!-- footer -->
+<?php get_footer(); ?>

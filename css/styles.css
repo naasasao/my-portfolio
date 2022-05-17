@@ -975,13 +975,6 @@ top
   text-align: left;
 }
 
-.test {
-  font-size: 20px;
-  font-size: 1.25rem;
-  background-color: #111;
-  color: #fff;
-}
-
 .works {
   background-color: green;
 }
