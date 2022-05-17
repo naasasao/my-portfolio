@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .sub-contact {
-    background-color: red;
+    // background-color: red;
 }
 
 .sub-contact__inner {
@@ -33,7 +33,7 @@
 
 .sub-contact__item input {
     margin-top: rem(16);
-    border: rem(2) solid $accent;
+    border: rem(2) solid $black;
     background-color: $white;
     color: #979797;
     font-size: rem(14);
@@ -67,6 +67,7 @@
 .sub-contact__item label {
     font-size: rem(14);
     color: $black;
+
     @include mq('md') {
        width: rem(160); 
        white-space: nowrap;
@@ -82,6 +83,8 @@
     font-size: rem(14);
     width: 100%;
     padding: rem(8) rem(8) rem(8) rem(8);
+    border: rem(2) solid $black;
+
     @include mq('md') {
         // margin-left: rem(24); 
      } 
