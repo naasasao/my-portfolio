@@ -7,6 +7,10 @@
     width: 100%;
     transition: background-color .8s;
     height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     @include mq('md') {
        height: 50px; 
     }
@@ -28,6 +32,7 @@
 .header__pc-nav {
     margin-left: auto;
     height: inherit;
+    
 }
 
 .header__pc-nav__items {
@@ -57,15 +62,27 @@
 
 // spのモーダルメニュー
 .header__sp-nav {
-    margin-left: auto;
     display: none;
 }
 
 .header__sp-nav__items {
-    z-index: 1111;
-    
+    @include mq('md') {
+        position: relative;
+        z-index: 1111;
+        background-color: red;
+        height: 100vh;
+        width: 80vw;
+        padding-top: rem(100);
+    }
 }
 
 .header__sp-nav__item {
-
+    @include mq('md') {
+        overflow-y: scroll;
+        width: 100%;
+        display: inline-block;
+        padding: rem(50) 0; 
+        text-align: center;
+        font-size: rem(32);
+    }
 }

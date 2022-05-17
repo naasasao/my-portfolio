@@ -6,7 +6,7 @@ $drawer-color: blue;
 
 .hamburger {
     display: none;
-    z-index: 9999;
+    z-index: 11111;
     @include mq(md) {
         display: block;
         margin-left: auto;
@@ -39,7 +39,7 @@ $drawer-color: blue;
 top                                        
 ======================================*/
 .hamburger.is-open span:nth-child(1)  {
-    top: rem(7);
+    top: rem(10.2);
     transform: rotate(45deg);
 }
 

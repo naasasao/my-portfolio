@@ -1,7 +1,11 @@
 @use 'global' as *;
 
 .mv {
+    padding-top: 100px;
     background-color: rgb(28, 18, 223);
+    @include mq('md') {
+       padding-top: 50px; 
+    }
 }
 
 .mv__content {
