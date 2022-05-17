@@ -15,6 +15,9 @@
     margin-top: rem(24);
     display: flex;
     flex-wrap: wrap;
+    @include mq('md') {
+       display: block; 
+    }
 }
 
 
@@ -24,14 +27,24 @@
     position: relative;
     display: flex;
     flex-grow: 1;
+    @include mq('md') {
+       width: 100%; 
+       margin-top: rem(24);
+    }
 }
 
 .works__image:nth-child(n+3) {
     margin-top: rem(24);
+    @include mq('md') {
+       margin-top: rem(32); 
+    }
 }
 
 .works__image:nth-child(2n) {
     margin-left: rem(24);
+    @include mq('md') {
+       margin-left: 0; 
+    }
 }
 
 .works__image::before {
@@ -53,4 +66,7 @@
 .works__button {
     margin-top: rem(48);
     text-align: center;
+    @include mq('md') {
+       margin-top: rem(56); 
+    }
 }

@@ -14,25 +14,41 @@
 .about-me__contents {
     margin-top: rem(24);
     display: flex;
+    @include mq('md') {
+       display: block; 
+    }
 }
 
 .about-me__image {
     width: 40%;
+    @include mq('md') {
+       width: 100%;
+       margin: 0 auto; 
+    }
 }
 
 .about-me__explain {
     padding-left: rem(32);
     width: 60%;
+    @include mq('md') {
+       width: 80%;
+       margin: rem(24) auto 0; 
+       padding-left: 0;
+    }
 }
 
 .about-me__skills {
     margin-top: rem(24);
     text-align: center;
-    // color: blue;
+    @include mq('md') {
+    //    text-align: left; 
+    }
 }
 
 .about-me__title {
-
+    @include mq('md') {
+        padding-top: rem(24); 
+     } 
 }
 
 .about-me__coding,

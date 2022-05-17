@@ -37,6 +37,9 @@
 .sub-works__explain {
     margin-top: rem(24);
     text-align: center;
+    @include mq('md') {
+       margin-top: rem(56); 
+    }
 }
 
 .sub-works__title {
@@ -63,6 +66,9 @@
 
 .sub-works__textBox {
     margin-top: rem(32);
+    @include mq('md') {
+        margin-top: rem(64);
+    }
 }
 
 .sub-works__sub-title {
@@ -72,6 +78,9 @@
 
 .sub-works__text {  
     text-align: left;
+    @include mq('md') {
+       margin-top: rem(16); 
+    }
 }
 
 

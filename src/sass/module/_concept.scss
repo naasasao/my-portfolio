@@ -21,6 +21,9 @@
     margin-top: rem(48);
     display: flex;
     align-items: center;
+    @include mq('md') {
+       display: block; 
+    }
 }
 
 .concept__explain:nth-child(2n) {
@@ -29,11 +32,17 @@
 
 .concept__image {
     width: 50%;
+    @include mq('md') {
+       width: 100%; 
+    }
 }
 
 .concept__textBox {
     width: 50%;
     padding: rem(32);
+    @include mq('md') {
+        width: 100%; 
+     } 
 }
 
 

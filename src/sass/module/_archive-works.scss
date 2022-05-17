@@ -17,18 +17,38 @@
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    @include mq('md') {
+       display: block; 
+    }
 }
 
 .archive-works__item {
     width: 40%;
+    @include mq('md') {
+       width: 100%; 
+    }
 }
+
 
 .archive-works__item:nth-child(2n) {
     margin-left:rem(32);
+    @include mq('md') {
+       margin-left: 0; 
+    }
 }
 
 .archive-works__item:nth-child(n+3) {
     margin-top: rem(48);
+    @include mq('md') {
+       margin-top: 0; 
+    }
+}
+
+.archive-works__item:nth-child(n+1) {
+    @include mq('md') {
+       display: inline-block;
+       margin-top: rem(56); 
+    }
 }
 
 .archive-works__image {
