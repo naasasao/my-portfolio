@@ -18,7 +18,7 @@ $contact = esc_url(home_url('/contact/'));
           </p>
         </div>
         <div class="contact__button">
-          <a class="button" href="<?php echo $works ?>">VIEW MORE</a>
+          <a class="button" href="<?php echo $contact ?>">VIEW MORE</a>
         </div>
     </div>
   </section>
