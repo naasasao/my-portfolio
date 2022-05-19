@@ -11,32 +11,60 @@
         </div>
         <div class="sub-works__contains">
             <div class="sub-works__image">
-                <img src="./images/bird.jpg" alt="">
+               <?php the_post_thumbnail('full'); ?>
             </div>
         </div>
         <div class="sub-works__explain">
-            <h3 class="sub-works__title">架空コーポレートサイト</h3>
+            <h3 class="sub-works__title"><?php the_title(); ?></h3>
             <ul class="sub-works__textBox">
-                <div class="sub-works__sub-title">全体像</div>
-                <li class="sub-works__text">TOPページ+下層ページ10ページ</li>
+                <div class="sub-works__sub-title">ページの全体像</div>
+                <li class="sub-works__text"><?php the_field('component'); ?></li>
             </ul>
             <ul class="sub-works__textBox">
-                <div class="sub-works__sub-title">ツールなど</div>
-                <li class="sub-works__text">WordPress</li>
-                <li class="sub-works__text">Gulp / Sass</li>
-                <li class="sub-works__text">スマートフォン→PCの順でコーディング</li>
+                <div class="sub-works__sub-title">利用したもの</div>
+                <li class="sub-works__text"><?php the_field('tools'); ?></li>
             </ul>
             <ul class="sub-works__textBox">
                 <div class="sub-works__sub-title">制作時間</div>
-                <li class="sub-works__text">20日間（1日4-5hを想定）<br class="u-desktop">
-                    （静的コーディングからWordPress化まで）</li>
+                <li class="sub-works__text"><?php the_field('production-time'); ?></li>
             </ul>
             <ul class="sub-works__textBox">
-                <div class="sub-works__sub-title">コーディングのポイント</div>
-                <li class="sub-works__text">共通パーツ、セクションごと、ページごと、といったように汎用性・再利用性が高い部分からコーディングしています。そのために、最初にカンプ全体を見回し、ゴールから逆算して大まかなスケジューリングを行います。</li>
-                <li class="sub-works__text">また、ピクセルパーフェクトを行いながらコーディングしていくので、カンプと大幅なズレ無く作業を進めていきます。</li>
+                <?php if (get_field('point-title')) : ?>
+                    <div class="sub-works__sub-title"><?php the_field('point-title'); ?></div>
+                    <li class="sub-works__text"><?php the_field('point-text'); ?></li>
+                <?php endif; ?>
             </ul>
             <ul class="sub-works__textBox">
+                <?php if (get_field('point-title2')) : ?>
+                    <div class="sub-works__sub-title"><?php the_field('point-title2'); ?></div>
+                    <li class="sub-works__text"><?php the_field('point-text2'); ?></li>
+                <?php endif; ?>
+            </ul>
+            <ul class="sub-works__textBox">
+                <?php if (get_field('point-title3')) : ?>
+                    <div class="sub-works__sub-title"><?php the_field('point-title3'); ?></div>
+                    <li class="sub-works__text"><?php the_field('point-text3'); ?></li>
+                <?php endif; ?>
+            </ul>
+            <ul class="sub-works__textBox">
+                <?php if (get_field('comment-title')) : ?>
+                    <div class="sub-works__sub-title"><?php the_field('comment-title'); ?></div>
+                    <li class="sub-works__text"><?php the_field('comment-text'); ?></li>
+                <?php endif; ?>
+            </ul>
+            <ul class="sub-works__textBox">
+                <?php if (get_field('component-all')) : ?>
+                    <div class="sub-works__sub-title"><?php the_field('component-all'); ?></div>
+                    <li class="sub-works__text"><?php the_field('component-detail'); ?></li>
+                <?php endif; ?>
+                <?php if (get_field('component-image')) : ?>
+                    <li class="sub-works__text">
+                        <img src="<?php the_field('component-image'); ?>" />
+                    </li>
+                <?php endif; ?>
+            </ul>
+
+            <!-- <ul class="sub-works__textBox">
                 <div class="sub-works__sub-title">レスポンシブのポイント</div>
                 <li class="sub-works__text">320pxから1920pxまであらゆる幅に対応可能なように、基本的に相対値を用いています。</li>
                 <li class="sub-works__text">どんな画像が入っても表示崩れが起こらぬよう工夫しています。</li>
@@ -63,7 +91,7 @@
                 <li class="sub-works__text">お問い合わせページ</li>
                 <li class="sub-works__text">お問い合わせ完了・送信エラーページ</li>
                 <li class="sub-works__text">404ページ</li>
-            </ul>
+            </ul> -->
 
         </div>
     </div>

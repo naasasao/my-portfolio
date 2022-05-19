@@ -131,12 +131,6 @@ select {
 }
 
 /* Blur images when they have no alt attribute */
-img:not([alt]) {
-  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
-  -webkit-filter: blur(10px);
-          filter: blur(10px);
-}
-
 /* フォームリセット */
 input,
 button,
@@ -771,6 +765,88 @@ top
   font-size: 1.5rem;
 }
 
+.pagination {
+  margin: 40px 0 0;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagination .page-numbers {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 20px 25px;
+  color: #333;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 3px #999;
+          box-shadow: 0 3px 3px #999;
+  background: #fff;
+}
+
+.pagination .current {
+  padding: 20px 25px;
+  background: #69a4db;
+  color: #fff;
+}
+
+.pagination .prev,
+.pagination .next {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #69a4db;
+}
+
+.pagination .dots {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.pagination {
+  margin: 40px 0 0;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagination .page-numbers {
+  display: inline-block;
+  margin-right: 20px;
+  padding: 20px 25px;
+  color: #333;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 3px 3px #999;
+          box-shadow: 0 3px 3px #999;
+  background: #fff;
+}
+
+.pagination .current {
+  padding: 20px 25px;
+  background: #69a4db;
+  color: #fff;
+}
+
+.pagination .prev,
+.pagination .next {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #69a4db;
+}
+
+.pagination .dots {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .section-layout {
   padding-top: 120px;
   padding-top: 7.5rem;
@@ -1007,7 +1083,7 @@ top
   padding: 25px;
 }
 
-.works__contents {
+.works__items {
   margin-top: 24px;
   margin-top: 1.5rem;
   display: -webkit-box;
@@ -1017,7 +1093,7 @@ top
       flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
-  .works__contents {
+  .works__items {
     display: block;
   }
 }

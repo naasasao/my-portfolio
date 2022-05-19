@@ -65,21 +65,30 @@ $contact = esc_url(home_url('/contact/'));
   </div>
   <div class="works__inner">
     
-      <div class="works__contents">
+      <div class="works__items">
+
+      <?php
+        $args = array(
+              'post_type' => 'works',
+              'posts_per_page' => '4'
+              );
+          $the_query = new WP_query($args);
+          if ($the_query->have_posts()):
+        ?>
+
+        <?php while($the_query->have_posts()): $the_query->the_post(); ?>
 
           <a class="works__image" href="<?php the_permalink(); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bird.jpg" alt="">
+            <?php the_post_thumbnail('full'); ?>
           </a>
-          <a class="works__image" href="<?php the_permalink(); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bird.jpg" alt="">
-          </a>
-          <a class="works__image" href="<?php the_permalink(); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bird.jpg" alt="">
-          </a>
-          <a class="works__image" href="<?php the_permalink(); ?>">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bird.jpg" alt="">
-          </a>
-      
+
+        <?php endwhile; ?>
+        <?php else: ?>
+        <!-- 投稿が無い場合の処理 -->
+        投稿無いですー
+        <?php wp_reset_postdata(); ?>
+        <?php endif; ?>
+
       </div>
 
       <div class="works__button">
@@ -143,7 +152,7 @@ $contact = esc_url(home_url('/contact/'));
     <div class="contact__inner">
       <div class="map">
         <div class="map__inner">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.1950449305714!2d142.34135021478224!3d43.789565651621295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ce5c136a0b1a3%3A0x4e936c0ae55a161e!2z44CSMDcwLTA4MjUg5YyX5rW36YGT5pet5bed5biC5YyX6ZaA55S677yR77yT5LiB55uu77yS77yS77yQ77yW4oiS77yY77yV!5e0!3m2!1sja!2sjp!4v1652331326242!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="//www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.1950449305714!2d142.34135021478224!3d43.789565651621295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0ce5c136a0b1a3%3A0x4e936c0ae55a161e!2z44CSMDcwLTA4MjUg5YyX5rW36YGT5pet5bed5biC5YyX6ZaA55S677yR77yT5LiB55uu77yS77yS77yQ77yW4oiS77yY77yV!5e0!3m2!1sja!2sjp!4v1652331326242!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
     </div>

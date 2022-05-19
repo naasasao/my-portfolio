@@ -25,8 +25,6 @@ function my_setup() {
 }
 add_action( 'after_setup_theme', 'my_setup' );
 
-
-
 /**
  * CSSとJavaScriptの読み込み
  *
@@ -37,9 +35,9 @@ function my_script_init()
 
 	wp_enqueue_style( 'my', get_template_directory_uri() . '/css/styles.css');
 	
-	wp_enqueue_style( 'googlefont-notosans', 'https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap' );
+	wp_enqueue_style( 'googlefont-notosans', '//fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap' );
 
-	wp_enqueue_style( 'googlefont-notoserif', 'https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap' );
+	wp_enqueue_style( 'googlefont-notoserif', '//fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap' );
 
 	wp_enqueue_script( 'my', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0.1', true );
 
@@ -203,5 +201,22 @@ function create_post_type() {
       'public' => true,
     )
   );
+};
 
+//画像の自動生成を止める
+//   https://iwb.jp/wordpress-images-uploading-stop-automatic-generation/
+function remove_image_sizes( $sizes ) {
+//   unset( $sizes['thumbnail'] );
+  unset( $sizes['medium'] );
+  unset( $sizes['large'] );
+  unset( $sizes['1536x1536'] );
+  unset( $sizes['2048x2048'] );
+  return $sizes;
 }
+add_filter( 'intermediate_image_sizes_advanced', 'remove_image_sizes' );
+add_filter( 'big_image_size_threshold', '__return_false' );
+update_option( 'medium_large_size_w', 0 );
+
+
+
+?>
