@@ -16,7 +16,7 @@
 
 <div class="category category-layout">
     <div class="category__inner">
-        <!-- <span class="category-data">カテゴリ > </span> -->
+        <span class="category-data">全カテゴリ :</span>
         <!-- <?php if( has_term('','works-cat',$post->ID) ): ?>
             <span class="category__data">
                 <?php $post_term = get_the_terms($post->ID,'works-cat'); echo $post_term[0]->name; ?>
