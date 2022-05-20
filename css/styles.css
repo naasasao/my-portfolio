@@ -742,6 +742,12 @@ top
   }
 }
 
+.index {
+  padding: 200px 200px;
+  padding: 12.5rem 12.5rem;
+  text-align: center;
+}
+
 .inner {
   width: 100%;
   padding-right: 20px;

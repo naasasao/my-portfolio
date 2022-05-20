@@ -1,7 +1,16 @@
 <?php get_header(); ?>
 
-<div class="breadcrumb">
-
+<div class="breadcrumb breadcrumb-layout" >
+  <ul class="breadcrumb__lists">
+    <li class="breadcrumb__list">
+      <a href="<?php echo home_url(); ?>">
+        <i class="fa fa-home"></i><span>TOP ></span>
+      </a>
+    </li>
+    <li class="breadcrumb__list">
+      <a><?php echo esc_html(get_post_type_object(get_post_type())->label); ?></a>
+    </li>
+  </ul>
 </div>
 
 
