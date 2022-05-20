@@ -57,16 +57,9 @@
         </div>
         <div class="archive-works__items">
 
-        <?php
-        $args = array(
-            'post_type' => 'works',
-            'posts_per_page' => '6'
-            );
-        $the_query = new WP_query($args);
-        if ($the_query->have_posts()):
-        ?>
+        <?php if (have_posts()) : ?>
+        <?php while (have_posts()) : the_post(); ?>
 
-        <?php while($the_query->have_posts()): $the_query->the_post(); ?>
                 <a class="archive-works__item" href="<?php the_permalink(); ?>">
                     <div class="archive-works__image">
                        <?php the_post_thumbnail('full'); ?>
@@ -75,10 +68,6 @@
                 </a>
 
             <?php endwhile; ?>
-            <?php else: ?>
-            <!-- 投稿が無い場合の処理 -->
-            投稿無いですー
-            <?php wp_reset_postdata(); ?>
             <?php endif; ?>
 
         </div>
