@@ -166,7 +166,7 @@ function create_post_type() {
   register_post_type(
     'works',
     array(
-      'label' => '制作したもの',
+      'label' => 'Works一覧',
       'public' => true,
       'has_archive' => true,
       'menu_position' => 5,

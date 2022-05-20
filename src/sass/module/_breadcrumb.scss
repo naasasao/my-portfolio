@@ -1,2 +1,13 @@
 @use 'global' as *;
 
+.breadcrumb {
+
+}
+
+.breadcrumb__lists {
+    display: flex;
+}
+
+.breadcrumb__list {
+    margin-left: rem(30);
+}
