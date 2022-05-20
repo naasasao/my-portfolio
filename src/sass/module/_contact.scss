@@ -33,21 +33,3 @@
 }
 
 
-
-// iframeのトライ
-.map {
-    position: relative;
-    width: 100%;
-    padding-top: 40.6%;
-    //   margin: 0 calc(50% - 50vw);
-  }
-  .map iframe {
-      position:absolute;
-      top:50%;
-      left:50%;
-        transform: translate(-50%, -50%); 
-      width:80%;
-      height:60%;
-      border:none;
-      display:block;
-  }

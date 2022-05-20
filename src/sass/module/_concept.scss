@@ -37,6 +37,10 @@
     }
 }
 
+.concept__image img{
+    border-radius: rem(10);
+}
+
 .concept__textBox {
     width: 50%;
     padding: rem(32);

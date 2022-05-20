@@ -14,7 +14,17 @@
         <h3 class="sub-contact__message">お気軽にお問い合わせください！</h3>
 
         <div class="sub-contact__items" action="confirm.php" method="post" name="form" id="contact">
-            <div class="sub-contact__item">
+
+
+        <?php if (have_posts()) : ?>
+                <?php while (have_posts()) : the_post(); ?>
+                        <?php the_content(); ?>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+ 
+
+            <!-- <div class="sub-contact__item">
                 <label>お名前</label>
                 <input type="text" name="name" required placeholder="テキストが入ります" value="">
             </div>
@@ -26,9 +36,9 @@
                 <label>お問い合わせ内容</label>
                 <textarea name="content" rows="20" required placeholder="テキストが入ります"></textarea>
             </div>
-            <div class="sub-contact__button">
+            <div class="sub-contact__button-area">
                 <button class="sub-contact__button" type="submit" id="button" disabled>送信</button>
-            </div>
+            </div> -->
         </div>
 
     </div>
