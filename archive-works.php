@@ -14,6 +14,24 @@
 </div>
 
 
+<div class="category category-layout">
+    <div class="category__inner">
+        <!-- <span class="category-data">カテゴリ > </span> -->
+        <!-- <?php if( has_term('','works-cat',$post->ID) ): ?>
+            <span class="category__data">
+                <?php $post_term = get_the_terms($post->ID,'works-cat'); echo $post_term[0]->name; ?>
+            </span>
+        <?php endif; ?> -->
+        <?php
+                $terms = get_terms('works-cat', array('hide_empty'=>false));
+                foreach ($terms as $term) {
+                echo '<a href="' . esc_url(get_term_link($term->slug, 'works-cat')) . '" class="category__data">' . $term->name . '</a>';
+                }
+            ?>
+
+    </div>
+</div>
+
 
 <section class="archive-works section-layout">
     <div class="archive-works__inner">

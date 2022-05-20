@@ -4,9 +4,10 @@
   <ul class="breadcrumb__lists">
         <li class="breadcrumb__list">
             <a href="<?php echo home_url(); ?>">
-            <i class="fa fa-home"></i><span>TOP</span>
+            <i class="fa fa-home"></i><span>TOP ></span>
             </a>
         </li>
+
         <?php
                 $term_id = get_queried_object_id();
                 $term_data = get_term($term_id);
@@ -21,13 +22,38 @@
         <li class="breadcrumb__list">
             <a><?php single_term_title() ?>の記事一覧</a>
         </li>
+
     </ul>
 </div>
+
+<div class="category category-layout">
+    <div class="category__inner">
+
+        <a class="category__content" href="/works">
+        ALL
+        <a>
+
+        <?php
+                    $terms = get_terms('works-cat', array('hide_empty'=>false));
+                    foreach ($terms as $term) {
+                    echo '<a href="' . esc_url(get_term_link($term->slug, 'works-cat')) . '" class="breadcrumb__list">' . $term->name . '</a>';
+                    }
+            ?>
+        <!-- <?php
+            if(has_term('','works-cat',$post->ID)) {
+                echo get_the_term_list($post->ID,'works-cat','<span class="category__data">','</span><span class="category__data">','</span>');
+            }
+        ?> -->
+
+    </div>
+</div>
+
+
 
 <section class="archive-works section-layout">
     <div class="archive-works__inner">
         <div class="section-title">
-            <h2 class="section-title__index">制作方法別のWorks一覧</h2>
+            <h2 class="section-title__index"><?php single_term_title() ?>の記事一覧</h2>
         </div>
         <div class="archive-works__items">
 

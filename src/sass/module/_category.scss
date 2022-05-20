@@ -1,33 +1,21 @@
 @use 'global' as *;
 
 .category {
-    margin-top: rem(82);
-    @include mq('md') {
-       margin-top: rem(115); 
-    }
-}
-
-.category__contents {
-    font-size: rem(16);
-    padding: 0 rem(20);
-    @include mq('md') {
-       padding: 0 rem(90); 
-    }
-}
-
-.category__content {
 
 }
 
-.category__contents a {
-    color: $black;
+.category-layout {
+    margin-top: rem(100);
 }
 
-.category__contents a + a {
-    margin-left: rem(20);
+.category__inner {
+    max-width: rem(800);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
 }
 
-.is-click {
-    background-color: $white;
-    color: $black;
+.category__data {
+    display: inline-block;
+    margin-left: rem(30);
 }

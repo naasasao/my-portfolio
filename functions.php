@@ -174,7 +174,9 @@ function create_post_type() {
         'title',
         'editor',
         'thumbnail',
-        'revisions'
+        'revisions',
+		'excerpt',
+		'custom-fields',
       ),
     )
   );
@@ -183,24 +185,34 @@ function create_post_type() {
     'works-cat',
     'works',
     array(
-      'hierarchical' => true,
-      'update_count_callback' => '_update_post_term_count',
-      'label' => 'カテゴリー',
-      'singular_label' => 'カテゴリー',
-      'public' => true,
-      'show_ui' => true
-    )
-  );
+		'label' => 'カテゴリー',
+		'singular_label' => 'カテゴリー',
+		'labels' => array(
+		  'all_items' => 'カテゴリ一覧',
+		  'add_new_item' => 'カテゴリを追加'
+		),
+		'public' => true,
+		'show_ui' => true,
+		'show_in_nav_menus' => true,
+		'hierarchical' => true
+		)
+	  );
 
   register_taxonomy(
     'works-tag',
     'works',
     array(
-      'label' => 'タグ',
-      'hierarchical' => false,
-      'public' => true,
-    )
-  );
+		'label' => 'タグ',
+		'singular_label' => 'タグ',
+		'labels' => array(
+		  'add_new_item' => 'タグを追加'
+		),
+		'public' => true,
+		'show_ui' => true,
+		'show_in_nav_menus' => true,
+		'hierarchical' => false
+		)
+	  );
 };
 
 //画像の自動生成を止める
