@@ -40,6 +40,8 @@ function my_script_init()
 	wp_enqueue_style( 'googlefont-notoserif', '//fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap' );
 
 	wp_enqueue_script( 'my', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0.1', true );
+	
+	wp_enqueue_script( 'fontawesome', '//kit.fontawesome.com/407aed272e.js');
 
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
@@ -214,6 +216,21 @@ function create_post_type() {
 		)
 	  );
 };
+
+
+
+//ページネーションのhtmlカスタマイズ
+function custom_pagination_html( $template ) {
+    $template = '
+    <nav class="pagination" role="navigation">
+        <h2 class="screen-reader-text">%2$s</h2>
+        %3$s
+    </nav>';
+    return $template;
+}
+add_filter('navigation_markup_template','custom_pagination_html');
+
+
 
 //画像の自動生成を止める
 //   https://iwb.jp/wordpress-images-uploading-stop-automatic-generation/

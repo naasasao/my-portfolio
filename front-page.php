@@ -2,11 +2,13 @@
 
 <?php
 $home = esc_url(home_url('/'));
-// $aboutme = esc_url(home_url('/aboutme/'));
+$aboutme = esc_url(home_url('/aboutme/'));
 $works = esc_url(home_url('/works/'));
-// $concept = esc_url(home_url('/concept/'));
+$concept = esc_url(home_url('/concept/'));
 $contact = esc_url(home_url('/contact/'));
 ?>
+
+
 
 
 <!-- MV -->
@@ -14,9 +16,9 @@ $contact = esc_url(home_url('/contact/'));
   <div class="mv__content">
     <p class="mv__message">My Portfolio site</p>
     <h1 class="mv__title">
-      CODING<i class="fontawesome fa-thin fa-angel"></i><br>
-      CODING<i class="fontawesome fa-thin fa-angel"></i><br>
-      CODING<i class="fontawesome fa-thin fa-angel"></i>
+      CODING！<br>
+      CODING！<br>
+      CODING！</i>
       <!-- 伝えるを<br>極める -->
     </h1>
     <p class="mv__message">Thank you for visiting here</p>
@@ -24,7 +26,7 @@ $contact = esc_url(home_url('/contact/'));
 </div>
 
 <!-- about me -->
-<section class="about-me section-layout">
+<section class="about-me section-layout" id="aboutme">
   <div class="section-title">
     <h2 class="section-title__index">ABOUT ME</h2>
   </div>
@@ -35,7 +37,7 @@ $contact = esc_url(home_url('/contact/'));
         </div>
         <div class="about-me__explain">
           <p class="about-me__text">
-            はじめまして！ちーやんと申します。<br>
+            はじめまして！奥山と申します。<br>
             大阪府在住の1児の母で、工学部卒です。会社員として6年間勤務していました。現在はWebコーダーとしてお仕事をいただいております。<br>
             元々プログラミングに興味があり、コーディングに挑戦したところその面白さに魅了されました。同時に、難しさにも直面する日々です。どうしたらうまく書けるのかひたすら調べています。<br>
             モノづくりに熱意を持って取り組んでおります。
@@ -98,7 +100,7 @@ $contact = esc_url(home_url('/contact/'));
 </section>
 
 <!-- concept -->
-<section class="concept section-layout">
+<section class="concept section-layout" id="concept">
   <div class="section-title">
     <h2 class="section-title__index">CONCEPT</h2>
   </div>

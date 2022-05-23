@@ -49,18 +49,18 @@ $contact = esc_url(home_url('/contact/'));
 
       <nav class="header__sp-nav js-drawer-menu">
           <ul class="header__sp-nav__items" id="nav">
-                <li class="header__sp-nav__item"><a class="link" href="<?php echo $aboutme ?>">about me</a></li>
+                <!-- <li class="header__sp-nav__item"><a class="link" href="<?php echo esc_url(home_url('/about/')); ?>">about me</a></li> -->
                 <li class="header__sp-nav__item"><a class="link" href="<?php echo $works ?>">works</a></li>
-                <li class="header__sp-nav__item"><a class="link" href="<?php echo $concept ?>">concept</a></li>
+                <!-- <li class="header__sp-nav__item"><a class="link" href="<?php echo esc_url(home_url('/concept/')); ?>">concept</a></li> -->
                 <li class="header__sp-nav__item"><a class="link" href="<?php echo $contact ?>">contact</a></li>
           </ul>
       </nav>
         
       <nav class="header__pc-nav">
             <ul class="header__pc-nav__items">
-                <li class="header__pc-nav__item"><a class="link" href="<?php echo $aboutme ?>">about me</a></li>
+                <!-- <li class="header__pc-nav__item"><a class="link" href="<?php echo esc_url(home_url('/#aboutme/')); ?>">about me</a></li> -->
                 <li class="header__pc-nav__item"><a class="link" href="<?php echo $works ?>">works</a></li>
-                <li class="header__pc-nav__item"><a class="link" href="<?php echo $concept ?>">concept</a></li>
+                <!-- <li class="header__pc-nav__item"><a class="link" href="#concept">concept</a></li> -->
                 <li class="header__pc-nav__item"><a class="link" href="<?php echo $contact ?>">contact</a></li>
             </ul>
       </nav>

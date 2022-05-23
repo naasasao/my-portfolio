@@ -1,0 +1,22 @@
+@use 'global' as *;
+
+.pagination {
+
+}
+
+.pagination__inner {
+   width: 100%;
+   margin: 0 auto;
+   padding: $padding-pc;
+}
+
+
+.page-numbers {
+   display: flex;
+   justify-content: center;
+}
+
+.page-numbers li {
+  margin-left: rem(20);
+}
+
