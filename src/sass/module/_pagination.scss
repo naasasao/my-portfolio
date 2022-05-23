@@ -17,6 +17,12 @@
 }
 
 .page-numbers li {
-  margin-left: rem(20);
+   margin-left: rem(20);
+   border: rem(2) solid $black;
+   padding: rem(8) rem(16);
+}
+
+.page-numbers li:hover {
+   background-color: $accent;
 }
 

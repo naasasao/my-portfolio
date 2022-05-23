@@ -14,6 +14,7 @@
 .about-me__contents {
     margin-top: rem(24);
     display: flex;
+    align-items: center;
     @include mq('md') {
        display: block; 
     }
@@ -54,4 +55,12 @@
 .about-me__coding,
 .about-me__design {
     padding-left: rem(8);
+}
+
+.about-me__button {
+    margin-top: rem(48);
+    text-align: center;
+    @include mq('md') {
+       margin-top: rem(56); 
+    }
 }

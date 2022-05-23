@@ -24,7 +24,7 @@
 
 <div class="category category-layout">
     <div class="category__inner">
-        <!-- <span class="category__data">カテゴリ > </span> -->
+        <span class="category__data"> カテゴリ ： </span>
     <?php
         if(has_term('','works-cat',$post->ID)) {
             echo get_the_term_list($post->ID,'works-cat','<span class="category__data">','</span><span class="category__data">','</span>');
@@ -56,7 +56,23 @@
                         <li class="sub-works__text"><?php the_field('component'); ?></li>
                     </ul>
                     <ul class="sub-works__textBox">
-                        <div class="sub-works__sub-title">利用したもの</div>
+                        <div class="sub-works__sub-title">
+                            ページURL
+                        </div>
+                            <li class="sub-works__text">
+                                <a href="<?php the_field('url'); ?>" target="_blank" rel="noopener noreferrer">
+                                    リンクはこちらをクリック
+                                </a>
+                                <span><?php the_field('url-text'); ?></span>
+                            </li>
+                            <!-- <li class="sub-works__text">
+                                <a href="<?php the_field('code'); ?>" target="_blank" rel="noopener noreferrer">
+                                ソースコード</a> 
+                                <span><?php the_field('code-text'); ?></span>
+                           </li> -->
+                    </ul>
+                    <ul class="sub-works__textBox">
+                        <div class="sub-works__sub-title">使っているもの</div>
                         <li class="sub-works__text"><?php the_field('tools'); ?></li>
                     </ul>
                     <ul class="sub-works__textBox">
@@ -95,6 +111,7 @@
                     </ul>
                     <ul class="sub-works__textBox">
                         <?php if (get_field('image-title')) : ?>
+                            <div class="sub-works__sub-title"><?php the_field('image-title'); ?></div>
                             <img src="<?php the_field('image-top'); ?>" />
                         <?php endif; ?>
                     </ul>

@@ -2,7 +2,7 @@
 
 <?php
 $home = esc_url(home_url('/'));
-$aboutme = esc_url(home_url('/aboutme/'));
+$about = esc_url(home_url('/about/'));
 $works = esc_url(home_url('/works/'));
 $concept = esc_url(home_url('/concept/'));
 $contact = esc_url(home_url('/contact/'));
@@ -16,9 +16,9 @@ $contact = esc_url(home_url('/contact/'));
   <div class="mv__content">
     <p class="mv__message">My Portfolio site</p>
     <h1 class="mv__title">
-      CODING！<br>
-      CODING！<br>
-      CODING！</i>
+      CODING<br>
+      CODING<br>
+      CODING
       <!-- 伝えるを<br>極める -->
     </h1>
     <p class="mv__message">Thank you for visiting here</p>
@@ -26,7 +26,7 @@ $contact = esc_url(home_url('/contact/'));
 </div>
 
 <!-- about me -->
-<section class="about-me section-layout" id="aboutme">
+<section class="about-me section-layout">
   <div class="section-title">
     <h2 class="section-title__index">ABOUT ME</h2>
   </div>
@@ -38,7 +38,7 @@ $contact = esc_url(home_url('/contact/'));
         <div class="about-me__explain">
           <p class="about-me__text">
             はじめまして！奥山と申します。<br>
-            大阪府在住の1児の母で、工学部卒です。会社員として6年間勤務していました。現在はWebコーダーとしてお仕事をいただいております。<br>
+            大阪府在住の1児の母です。会社員として6年間勤務していました。現在はWebコーダーとしてお仕事をいただいております。<br>
             元々プログラミングに興味があり、コーディングに挑戦したところその面白さに魅了されました。同時に、難しさにも直面する日々です。どうしたらうまく書けるのかひたすら調べています。<br>
             モノづくりに熱意を持って取り組んでおります。
           </p>
@@ -57,6 +57,10 @@ $contact = esc_url(home_url('/contact/'));
             Adobe XD, figma, Photoshop          </span>
         </p>
       </div>
+      <div class="about-me__button">
+        <a class="button" href="<?php echo $about ?>">VIEW MORE</a>
+      </div>
+
   </div>
 </section>
 

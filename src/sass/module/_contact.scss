@@ -1,6 +1,7 @@
 @use 'global' as *;
 
 .contact {
+    background-color: $sub-accent;
 
 }
 
@@ -9,9 +10,6 @@
     width: 100%;
     margin: 0 auto;
     padding: $padding-pc;
-    // トライ↓
-    background-color: red;
-    max-width: 100vw;
 }
 
 .contact__contents {
