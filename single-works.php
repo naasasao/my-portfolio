@@ -24,7 +24,7 @@
 
 <div class="category category-layout">
     <div class="category__inner">
-        <span class="category__data"> カテゴリ ： </span>
+        <span class="category__data"> カテゴリ : </span>
     <?php
         if(has_term('','works-cat',$post->ID)) {
             echo get_the_term_list($post->ID,'works-cat','<span class="category__data">','</span><span class="category__data">','</span>');

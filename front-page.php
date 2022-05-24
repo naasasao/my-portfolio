@@ -129,7 +129,7 @@ $contact = esc_url(home_url('/contact/'));
             <h3 class="concept__heading">「気持ちに寄り添う」</h3>
             <p class="concept__text">
               「何をしているかわからない」というのはコミュニケーション不足であると考えます。<br>
-              ちょっとした疑問や些細な事もお答えし、ご自身の思いに寄り添います。
+              ちょっとした疑問や些細な事もお答えして寄り添います。
             </p>
           </div>
         </div>
@@ -140,7 +140,7 @@ $contact = esc_url(home_url('/contact/'));
           <div class="concept__textBox">
             <h3 class="concept__heading">「高い柔軟性」</h3>
             <p class="concept__text">
-              決まった型を設けず、より良い方法を常に模索しています。<br>
+              決まった型を設けずより良い方法を常に模索しています。<br>
               外部の意見を取り入れることを大切にし、進行中にイレギュラーが起こった場合には代替案をご提案します。
             </p>
           </div>

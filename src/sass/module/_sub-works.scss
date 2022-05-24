@@ -37,6 +37,8 @@
 .sub-works__explain {
     margin-top: rem(24);
     text-align: center;
+    font-family: $second-font-family;
+
     @include mq('md') {
        margin-top: rem(56); 
     }
