@@ -8,7 +8,7 @@ $contact = esc_url(home_url('/contact/'));
 
 <section class="contact section-layout">
     <div class="section-title">
-      <h2 class="section-title__index">contact</h2>
+      <h2 class="section-title__index fade-in">CONTACT</h2>
     </div>
     <div class="contact__inner">
         <div class="contact__contents">
@@ -18,7 +18,7 @@ $contact = esc_url(home_url('/contact/'));
           </p>
         </div>
         <div class="contact__button">
-          <a class="button" href="<?php echo $contact ?>">VIEW MORE</a>
+          <a class="button" href="<?php echo $contact ?>">Let's Contact!</a>
         </div>
     </div>
   </section>

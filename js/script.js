@@ -1,5 +1,5 @@
 
-jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
+jQuery(function ($) { 
 
   var topBtn = $('.pagetop');
   topBtn.hide();
@@ -34,7 +34,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 
-
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
 
   $(document).on('click', 'a[href*="#"]', function () {
@@ -58,10 +57,22 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       }
     });
     
-
-});
-
+  });
 
 
 
-// js
+  //JavaScript
+  // https://flex-box.net/js-scrollin/#body
+  let fadeInTarget = document.querySelectorAll('.fade-in');
+  window.addEventListener('scroll', () => {
+    for (let i = 0; i < fadeInTarget.length; i++){
+      const rect = fadeInTarget[i].getBoundingClientRect().top;
+      const scroll = window.pageYOffset || document.documentElement.scrollTop;
+      const offset = rect + scroll;
+      const windowHeight = window.innerHeight; // 現在のブラウザの高さ
+      if (scroll > offset - windowHeight + 150) {
+        fadeInTarget[i].classList.add('scroll-in');
+      }
+    }
+  });
+

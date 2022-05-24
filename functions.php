@@ -39,6 +39,8 @@ function my_script_init()
 
 	wp_enqueue_style( 'googlefont-notoserif', '//fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300&display=swap' );
 
+	wp_enqueue_style( 'adobe-swingking', '//use.typekit.net/adt3jyp.css' );
+
 	wp_enqueue_script( 'my', get_template_directory_uri() . '/js/script.js', array( 'jquery' ), '1.0.1', true );
 	
 	wp_enqueue_script( 'fontawesome', '//kit.fontawesome.com/407aed272e.js');
@@ -168,7 +170,7 @@ function create_post_type() {
   register_post_type(
     'works',
     array(
-      'label' => 'Works一覧',
+      'label' => 'WORKS一覧',
       'public' => true,
       'has_archive' => true,
       'menu_position' => 5,

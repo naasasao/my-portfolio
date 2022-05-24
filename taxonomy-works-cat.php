@@ -30,7 +30,7 @@
     <div class="category__inner">
 
         <a class="category__content" href="/works">
-        ALL(Works一覧)
+        ALL(WORKS一覧)
         <a>
 
         <?php
@@ -53,7 +53,7 @@
 <section class="archive-works section-layout">
     <div class="archive-works__inner">
         <div class="section-title">
-            <h2 class="section-title__index"><?php single_term_title() ?>で制作した<br>Works一覧</h2>
+            <h2 class="section-title__index fade-in"><?php single_term_title() ?>の<br>WORKS一覧</h2>
         </div>
         <div class="archive-works__items">
 

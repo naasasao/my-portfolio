@@ -14,26 +14,25 @@ $contact = esc_url(home_url('/contact/'));
 <!-- MV -->
 <div class="mv">
   <div class="mv__content">
-    <p class="mv__message">My Portfolio site</p>
+    <p class="mv__message">― My Portfolio site ―</p>
     <h1 class="mv__title">
-      CODING<br>
-      CODING<br>
-      CODING
-      <!-- 伝えるを<br>極める -->
+      CODING！<br>
+      CODING！<br>
+      CODING！
     </h1>
-    <p class="mv__message">Thank you for visiting here</p>
+    <p class="mv__message">― Thank you for visiting here ―</p>
   </div>
 </div>
 
 <!-- about me -->
 <section class="about-me section-layout">
   <div class="section-title">
-    <h2 class="section-title__index">ABOUT ME</h2>
+    <h2 class="section-title__index fade-in">ABOUT ME</h2>
   </div>
   <div class="about-me__inner">
       <div class="about-me__contents">
         <div class="about-me__image">
-          <img src="<?php echo get_template_directory_uri(); ?>/images/bird.jpg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/images/heart.jpg" alt="">
         </div>
         <div class="about-me__explain">
           <p class="about-me__text">
@@ -47,18 +46,18 @@ $contact = esc_url(home_url('/contact/'));
       <div class="about-me__skills">
         <p class="about-me__title">SKILL
           <span class="about-me__coding"><br class="u-desktop">
-            BEM, flocss /scss, JavaScript /<br class="u-desktop">
-            gulp, npm script /github
+            BEM, FLOCSS /Scss, JavaScript(& jQuery) /<br class="u-desktop">
+            Gulp, npm script /GitHub
           </span>
         </p>
         <p class="about-me__title">TOOLS<br class="u-desktop">
           <span class="about-me__design">
             WordPress /STUDIO, WIX /<br class="u-desktop">
-            Adobe XD, figma, Photoshop          </span>
+            Adobe XD, Figma, Photoshop          </span>
         </p>
       </div>
       <div class="about-me__button">
-        <a class="button" href="<?php echo $about ?>">VIEW MORE</a>
+        <a class="button" href="<?php echo $about ?>">View More</a>
       </div>
 
   </div>
@@ -67,7 +66,7 @@ $contact = esc_url(home_url('/contact/'));
 <!-- works -->
 <section class="works section-layout">
   <div class="section-title">
-    <h2 class="section-title__index">works</h2>
+    <h2 class="section-title__index fade-in">WORKS</h2>
   </div>
   <div class="works__inner">
     
@@ -91,14 +90,14 @@ $contact = esc_url(home_url('/contact/'));
         <?php endwhile; ?>
         <?php else: ?>
         <!-- 投稿が無い場合の処理 -->
-        投稿無いですー
+        投稿は無いです
         <?php wp_reset_postdata(); ?>
         <?php endif; ?>
 
       </div>
 
       <div class="works__button">
-        <a class="button" href="<?php echo $works ?>">VIEW MORE</a>
+        <a class="button" href="<?php echo $works ?>">View More</a>
       </div>
   </div>
 </section>
@@ -106,7 +105,7 @@ $contact = esc_url(home_url('/contact/'));
 <!-- concept -->
 <section class="concept section-layout" id="concept">
   <div class="section-title">
-    <h2 class="section-title__index">CONCEPT</h2>
+    <h2 class="section-title__index fade-in">CONCEPT</h2>
   </div>
   <div class="concept__inner">
       <div class="concept__contents">
@@ -115,7 +114,7 @@ $contact = esc_url(home_url('/contact/'));
             <img src="<?php echo get_template_directory_uri(); ?>/images/speed.jpg" alt="">
           </div>
           <div class="concept__textBox">
-            <h3 class="concept__heading">素早いレスポンス</h3>
+            <h3 class="concept__heading">「素早いレスポンス」</h3>
             <p class="concept__text">
               進捗状況をお伝えし、常に作業の「見える化」を意識しています。<br>
               対面以外にテキストコミュニケーションが主流になってきた今だからこそ、きちんとお伝えします。
@@ -127,7 +126,7 @@ $contact = esc_url(home_url('/contact/'));
             <img src="<?php echo get_template_directory_uri(); ?>/images/cat.jpg" alt="">
           </div>
           <div class="concept__textBox">
-            <h3 class="concept__heading">気持ちに寄り添う</h3>
+            <h3 class="concept__heading">「気持ちに寄り添う」</h3>
             <p class="concept__text">
               「何をしているかわからない」というのはコミュニケーション不足であると考えます。<br>
               ちょっとした疑問や些細な事もお答えし、ご自身の思いに寄り添います。
@@ -139,7 +138,7 @@ $contact = esc_url(home_url('/contact/'));
             <img src="<?php echo get_template_directory_uri(); ?>/images/fuwari.jpg" alt="">
           </div>
           <div class="concept__textBox">
-            <h3 class="concept__heading">高い柔軟性</h3>
+            <h3 class="concept__heading">「高い柔軟性」</h3>
             <p class="concept__text">
               決まった型を設けず、より良い方法を常に模索しています。<br>
               外部の意見を取り入れることを大切にし、進行中にイレギュラーが起こった場合には代替案をご提案します。

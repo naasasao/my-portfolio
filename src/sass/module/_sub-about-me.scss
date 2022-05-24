@@ -5,5 +5,28 @@
 }
 
 .sub-about-me__inner {
-    
+    max-width: rem(900);
+    width: 100%;
+    margin: 0 auto;
+    padding: $padding-pc;
+}
+
+.sub-about-me__text-box {
+    margin: rem(80) auto 0;
+    border: rem(5) solid $accent;
+    max-width: rem(600);
+    width: 100%;
+}
+
+.sub-about-me__title {
+    font-size: rem(40);
+}
+
+.sub-about-me__text {
+    margin-top: rem(25);
+    font-size: rem(18);
+    padding-left: rem(50);
+    padding-right: rem(50);
+    padding-bottom: rem(25);
+    font-family: $second-font-family;
 }

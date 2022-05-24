@@ -1,7 +1,7 @@
 @use 'global' as *;
 
 .sub-contact {
-    // background-color: red;
+
 }
 
 .sub-contact__inner {
@@ -14,6 +14,7 @@
 .sub-contact__message {
     margin-top: rem(32);
     text-align: center;
+    font-family: $second-font-family;
 }
 
 .sub-contact__items {
@@ -54,9 +55,6 @@
 }
 
 
-
-
-// コピペ// コピペ// コピペ// コピペ// コピペ// コピペ// コピペ
 .sub-contact__item + .sub-contact__item {
     margin-top: rem(32);
     @include mq('md') {

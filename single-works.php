@@ -38,7 +38,7 @@
 <section class="sub-works section-layout">
     <div class="sub-works__inner">
         <div class="section-title">
-            <h2 class="section-title__index">Works</h2>
+            <h2 class="section-title__index fade-in">WORKS Detail</h2>
         </div>
         <div class="sub-works__contains">
 

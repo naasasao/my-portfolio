@@ -8,7 +8,7 @@
     <div class="sub-contact__inner">
 
         <div class="section-title">
-            <h2 class="section-title__index">contact</h2>
+            <h2 class="section-title__index fade-in">CONTACT</h2>
         </div>
 
         <h3 class="sub-contact__message">お気軽にお問い合わせください！</h3>

@@ -9,3 +9,8 @@
     padding: rem(8) rem(32);
 
 }
+
+.button:hover {
+    background-color: $accent;
+    color: blue;
+}
