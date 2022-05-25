@@ -9,12 +9,12 @@
     width: 100%;
     margin: 0 auto;
     padding: $padding-pc;
-    font-family: $second-font-family;
 }
 
 .sub-contact__message {
     margin-top: rem(32);
     text-align: center;
+    font-family: $second-font-family;
 }
 
 .sub-contact__items {

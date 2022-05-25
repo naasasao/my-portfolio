@@ -70,7 +70,7 @@ jQuery(function ($) {
       const scroll = window.pageYOffset || document.documentElement.scrollTop;
       const offset = rect + scroll;
       const windowHeight = window.innerHeight; // 現在のブラウザの高さ
-      if (scroll > offset - windowHeight + 150) {
+      if (scroll > offset - windowHeight + 100) {
         fadeInTarget[i].classList.add('scroll-in');
       }
     }

@@ -13,6 +13,14 @@
     transform: translate(-100px, -50px);
 }
 
+.section-title__sub {
+    font-size: rem(12);
+    color: blue;
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, transform;
+    transform: translate(-100px, -50px);
+}
 
 
 .scroll-in {

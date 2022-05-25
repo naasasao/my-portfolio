@@ -22,6 +22,7 @@
     }
 }
 
+
 .archive-works__item {
     width: 40%;
     @include mq('md') {
@@ -54,6 +55,7 @@
 .archive-works__image {
     width: 100%;
     position: relative;
+    border: rem(4) solid $sub-accent;
 }
 
 .archive-works__image::before {

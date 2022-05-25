@@ -309,6 +309,8 @@ select::-ms-expand {
 .archive-works__image {
   width: 100%;
   position: relative;
+  border: 4px solid rgb(228, 244, 249);
+  border: 0.25rem solid rgb(228, 244, 249);
 }
 
 .archive-works__image::before {
@@ -342,8 +344,13 @@ select::-ms-expand {
 }
 
 .breadcrumb-layout {
-  margin-top: 100px;
-  margin-top: 6.25rem;
+  margin-top: 150px;
+  margin-top: 9.375rem;
+}
+
+.breadcrumb-layout--bottom {
+  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
 }
 
 .breadcrumb {
@@ -797,6 +804,8 @@ top
 }
 
 .mv {
+  padding-top: 50px;
+  padding-top: 3.125rem;
   background-color: rgb(28, 18, 223);
 }
 .mv__content {
@@ -880,6 +889,21 @@ top
           transform: translate(-100px, -50px);
 }
 
+.section-title__sub {
+  font-size: 12px;
+  font-size: 0.75rem;
+  color: blue;
+  opacity: 0;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  -webkit-transform: translate(-100px, -50px);
+          transform: translate(-100px, -50px);
+}
+
 .scroll-in {
   opacity: 1;
   -webkit-transform: translate(0, 0);
@@ -929,13 +953,13 @@ top
   width: 100%;
   margin: 0 auto;
   padding: 25px;
-  font-family: "ab-kinmokusei-kuro", sans-serif;
 }
 
 .sub-contact__message {
   margin-top: 32px;
   margin-top: 2rem;
   text-align: center;
+  font-family: "ab-kinmokusei-kuro", sans-serif;
 }
 
 .sub-contact__items {
@@ -1051,6 +1075,8 @@ top
 .sub-works__image {
   width: 100%;
   position: relative;
+  border: 2px solid rgb(228, 244, 249);
+  border: 0.125rem solid rgb(228, 244, 249);
 }
 
 .sub-works__image::before {

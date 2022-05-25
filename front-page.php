@@ -37,21 +37,21 @@ $contact = esc_url(home_url('/contact/'));
         <div class="about-me__explain">
           <p class="about-me__text">
             はじめまして！奥山と申します。<br>
-            大阪府在住の1児の母です。会社員として6年間勤務していました。現在はWebコーダーとしてお仕事をいただいております。<br>
+            大阪府在住です。会社員として6年間勤務していました。現在はWebコーダーとしてお仕事をいただいております。<br>
             元々プログラミングに興味があり、コーディングに挑戦したところその面白さに魅了されました。同時に、難しさにも直面する日々です。どうしたらうまく書けるのかひたすら調べています。<br>
             モノづくりに熱意を持って取り組んでおります。
           </p>
         </div>
       </div><!--about-me__contents-->
       <div class="about-me__skills">
-        <p class="about-me__title">SKILL
+        <p class="about-me__title">Coding :
           <span class="about-me__coding"><br class="u-desktop">
-            BEM, FLOCSS /Scss, JavaScript(& jQuery) /<br class="u-desktop">
+            BEM, FLOCSS /Scss, JavaScript(& jQuery etc) /<br class="u-desktop">
             Gulp, npm script /GitHub
           </span>
         </p>
-        <p class="about-me__title">TOOLS<br class="u-desktop">
-          <span class="about-me__design">
+        <p class="about-me__title">Tools :
+          <span class="about-me__design"><br class="u-desktop">
             WordPress /STUDIO, WIX /<br class="u-desktop">
             Adobe XD, Figma, Photoshop          </span>
         </p>

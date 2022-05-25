@@ -17,6 +17,7 @@
 .sub-works__image {
     width: 100%;
     position: relative;
+    border: rem(2) solid $sub-accent;
 }
 .sub-works__image::before {
     content:"";
