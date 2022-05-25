@@ -45,14 +45,20 @@ $contact = esc_url(home_url('/contact/'));
       </div><!--about-me__contents-->
       <div class="about-me__skills">
         <p class="about-me__title">Coding :</p>
-        <p class="about-me__coding"><br class="u-desktop">
-            BEM, FLOCSS /Scss, JavaScript(& jQuery etc) /<br class="u-desktop">
-            Gulp, npm script /GitHub
+        <p class="about-me__coding">
+            BEM, FLOCSS /
+            <br class="u-desktop">Scss, JavaScript(& jQuery etc) /
+            <br class="u-desktop">
+            Gulp, npm script /
+            <br class="u-desktop">
+            GitHub
         </p>
         
         <p class="about-me__title">Tools :</p>
-        <p class="about-me__design"><br class="u-desktop">
-            WordPress /STUDIO, WIX /<br class="u-desktop">
+        <p class="about-me__design">
+            WordPress /
+            <br class="u-desktop">
+            STUDIO, WIX /<br class="u-desktop">
             Adobe XD, Figma, Photoshop 
         </p>
         

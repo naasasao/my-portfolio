@@ -66,6 +66,9 @@
 .about-me__coding,
 .about-me__design {
     padding-left: rem(8);
+    @include mq('md') {
+       font-size: rem(24); 
+    }
 }
 
 .about-me__button {
