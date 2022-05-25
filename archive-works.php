@@ -37,7 +37,7 @@
     <div class="archive-works__inner">
         <div class="section-title">
             <h2 class="section-title__index fade-in">WORKS 一覧</h2>
-            <p class="section-title__sub fade-in">※非公開不可の実績は掲載しておりません</p>
+            <p class="section-title__sub fade-in">※公開不可の実績は掲載しておりません</p>
         </div>
 
         <div class="archive-works__items">
