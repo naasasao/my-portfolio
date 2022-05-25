@@ -751,7 +751,8 @@ top
   .header__sp-nav__items {
     position: relative;
     z-index: 1111;
-    background-color: red;
+    background-color: yellow;
+    color: #111;
     height: 100vh;
     width: 80vw;
     padding-top: 6.25rem;
@@ -938,10 +939,10 @@ top
   margin-top: 1.5625rem;
   font-size: 18px;
   font-size: 1.125rem;
-  padding-left: 50px;
-  padding-left: 3.125rem;
-  padding-right: 50px;
-  padding-right: 3.125rem;
+  padding-left: 25px;
+  padding-left: 1.5625rem;
+  padding-right: 25px;
+  padding-right: 1.5625rem;
   padding-bottom: 25px;
   padding-bottom: 1.5625rem;
   font-family: "ab-kinmokusei-kuro", sans-serif;

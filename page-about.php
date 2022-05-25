@@ -20,7 +20,7 @@
               <ul class="sub-about-me__text">
                  <li>旅行（海が好きです）</li>
                  <li>読書（何でも読みます）</li>
-                 <li>スキューバダイビング（C card, Advanced）</li>
+                 <li>スキューバダイビング（Cを積丹、 Advancedをケアンズで取得）</li>
                  <li>今はサーフィンに挑戦したいです</li>
               </ul>
           </div>
