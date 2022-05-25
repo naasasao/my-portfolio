@@ -3,7 +3,7 @@
 <div class="sub-about-me section-layout">
     <div class="sub-about-me__inner">
        <div class="section-title">
-          <h2 class="section-title__index fade-in">ABOUT ME More</h2>
+          <h2 class="section-title__index fade-in">ABOUT ME</h2>
           <div class="sub-about-me__text-box">
               <div class="sub-about-me__title">Profile</div>
               <ul class="sub-about-me__text">

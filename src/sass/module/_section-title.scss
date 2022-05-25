@@ -2,6 +2,9 @@
 
 .section-title {
     text-align: center;
+    @include mq('md') {
+       margin-top: rem(40); 
+    }
 }
 
 .section-title__index {
@@ -17,12 +20,15 @@
 }
 
 .section-title__sub {
-    font-size: rem(12);
+    font-size: rem(24);
     color: blue;
     opacity: 0;
     transition-duration: 500ms;
     transition-property: opacity, transform;
     transform: translate(-100px, -50px);
+    @include mq('md') {
+        font-size: rem(32);
+    }
 }
 
 

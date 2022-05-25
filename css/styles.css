@@ -377,6 +377,11 @@ select::-ms-expand {
   margin-top: 150px;
   margin-top: 9.375rem;
 }
+@media screen and (max-width: 768px) {
+  .breadcrumb-layout {
+    margin-top: 12.5rem;
+  }
+}
 
 .breadcrumb-layout--bottom {
   margin-bottom: 50px;
@@ -924,7 +929,7 @@ top
 }
 @media screen and (max-width: 768px) {
   .mv {
-    padding-top: 5rem;
+    padding-top: 10rem;
   }
 }
 
@@ -999,14 +1004,24 @@ top
 }
 
 .section-layout {
-  padding-top: 120px;
-  padding-top: 7.5rem;
+  margin-top: 120px;
+  margin-top: 7.5rem;
   padding-bottom: 80px;
   padding-bottom: 5rem;
+}
+@media screen and (max-width: 768px) {
+  .section-layout {
+    margin-top: 11.5rem;
+  }
 }
 
 .section-title {
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .section-title {
+    margin-top: 2.5rem;
+  }
 }
 
 .section-title__index {
@@ -1030,8 +1045,8 @@ top
 }
 
 .section-title__sub {
-  font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   color: blue;
   opacity: 0;
   -webkit-transition-duration: 500ms;
@@ -1042,6 +1057,11 @@ top
   transition-property: opacity, transform, -webkit-transform;
   -webkit-transform: translate(-100px, -50px);
           transform: translate(-100px, -50px);
+}
+@media screen and (max-width: 768px) {
+  .section-title__sub {
+    font-size: 2rem;
+  }
 }
 
 .scroll-in {
@@ -1194,6 +1214,11 @@ top
   width: 100%;
   padding: 8px 8px;
   padding: 0.5rem 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-contact__item input {
+    padding: 2rem 1.5rem;
+  }
 }
 
 .sub-contact__button-area {
