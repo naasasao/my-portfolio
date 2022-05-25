@@ -53,7 +53,7 @@ $contact = esc_url(home_url('/contact/'));
         <p class="about-me__title">Tools :
           <span class="about-me__design"><br class="u-desktop">
             WordPress /STUDIO, WIX /<br class="u-desktop">
-            Adobe XD, Figma, Photoshop          </span>
+            Adobe XD, Figma, Photoshop </span>
         </p>
       </div>
       <div class="about-me__button">
