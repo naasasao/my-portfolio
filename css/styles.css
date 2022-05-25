@@ -242,8 +242,6 @@ select::-ms-expand {
 .about-me__design {
   padding-left: 8px;
   padding-left: 0.5rem;
-  font-size: 48px;
-  font-size: 3rem;
 }
 
 .about-me__button {
@@ -379,7 +377,7 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   .breadcrumb-layout {
-    margin-top: 12.5rem;
+    margin-top: 15.625rem;
   }
 }
 
@@ -996,6 +994,7 @@ top
 @media screen and (max-width: 768px) {
   .page-numbers li {
     padding: 1.5rem 3rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -1004,14 +1003,14 @@ top
 }
 
 .section-layout {
-  margin-top: 120px;
-  margin-top: 7.5rem;
+  padding-top: 120px;
+  padding-top: 7.5rem;
   padding-bottom: 80px;
   padding-bottom: 5rem;
 }
 @media screen and (max-width: 768px) {
   .section-layout {
-    margin-top: 11.5rem;
+    padding-top: 11.5rem;
   }
 }
 
@@ -1020,7 +1019,7 @@ top
 }
 @media screen and (max-width: 768px) {
   .section-title {
-    margin-top: 2.5rem;
+    margin-top: 5rem;
   }
 }
 
