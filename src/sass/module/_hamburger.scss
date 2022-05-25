@@ -21,6 +21,10 @@ $drawer-color: blue;
     width: $drawer-width;
     background: $drawer-color;
     transition: ease .3s;
+    @include mq('md') {
+       width: rem(80);
+       height: rem(16);
+    }
 }
 
 .hamburger span:nth-child(1) {
@@ -29,6 +33,9 @@ $drawer-color: blue;
 
 .hamburger span:nth-child(2) {
     margin: rem(5) 0;
+    @include mq('md') {
+       margin: rem(16) 0; 
+    }
 } 
 
 .hamburger span:nth-child(3) {
@@ -41,6 +48,9 @@ top
 .hamburger.is-open span:nth-child(1)  {
     top: rem(10.2);
     transform: rotate(45deg);
+    @include mq('md') {
+       top: rem(56); 
+    }
 }
 
 .hamburger.is-open span:nth-child(2) {

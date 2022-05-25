@@ -174,6 +174,11 @@ select::-ms-expand {
   margin: 0 auto;
   padding: 25px;
 }
+@media screen and (max-width: 768px) {
+  .about-me__inner {
+    padding: 20px;
+  }
+}
 
 .about-me__contents {
   margin-top: 24px;
@@ -222,7 +227,14 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   .about-me__title {
-    padding-top: 1.5rem;
+    margin-top: 4rem;
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-me__title:nth-child(2) {
+    margin-top: 2rem;
   }
 }
 
@@ -230,6 +242,8 @@ select::-ms-expand {
 .about-me__design {
   padding-left: 8px;
   padding-left: 0.5rem;
+  font-size: 48px;
+  font-size: 3rem;
 }
 
 .about-me__button {
@@ -239,7 +253,13 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   .about-me__button {
-    margin-top: 3.5rem;
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-me__text {
+    font-size: 3rem;
   }
 }
 
@@ -249,6 +269,11 @@ select::-ms-expand {
   width: 100%;
   margin: 0 auto;
   padding: 25px;
+}
+@media screen and (max-width: 768px) {
+  .archive-works__inner {
+    padding: 20px;
+  }
 }
 
 .archive-works__items {
@@ -342,6 +367,11 @@ select::-ms-expand {
   font-size: 1.5rem;
   font-family: "ab-kinmokusei-kuro", sans-serif;
 }
+@media screen and (max-width: 768px) {
+  .archive-works__title {
+    font-size: 4rem;
+  }
+}
 
 .breadcrumb-layout {
   margin-top: 150px;
@@ -362,6 +392,11 @@ select::-ms-expand {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .breadcrumb__lists {
+    font-size: 2.5rem;
+  }
+}
 
 .breadcrumb__list {
   margin-left: 30px;
@@ -379,6 +414,12 @@ select::-ms-expand {
   padding: 0.5rem 2rem;
   font-family: "swing-king", sans-serif;
 }
+@media screen and (max-width: 768px) {
+  .button {
+    padding: 2rem 6rem;
+    font-size: 4rem;
+  }
+}
 
 .button:hover {
   background-color: yellow;
@@ -395,6 +436,11 @@ select::-ms-expand {
   margin-left: 30px;
   margin-left: 1.875rem;
 }
+@media screen and (max-width: 768px) {
+  .category-layout {
+    margin-top: 5.5rem;
+  }
+}
 
 .category__inner {
   max-width: 900px;
@@ -405,11 +451,25 @@ select::-ms-expand {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .category__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 
 .category__data {
   display: inline-block;
   margin-left: 30px;
   margin-left: 1.875rem;
+}
+@media screen and (max-width: 768px) {
+  .category__data {
+    padding-top: 1.5rem;
+    font-size: 3rem;
+  }
 }
 
 .concept__inner {
@@ -418,6 +478,11 @@ select::-ms-expand {
   width: 100%;
   margin: 0 auto;
   padding: 25px;
+}
+@media screen and (max-width: 768px) {
+  .concept__inner {
+    padding: 20px;
+  }
 }
 
 .concept__contents {
@@ -483,12 +548,23 @@ select::-ms-expand {
   font-size: 1.75rem;
   color: blue;
 }
+@media screen and (max-width: 768px) {
+  .concept__heading {
+    font-size: 4rem;
+    text-align: center;
+  }
+}
 
 .concept__text {
   padding-top: 24px;
   padding-top: 1.5rem;
   font-size: 18px;
   font-size: 1.125rem;
+}
+@media screen and (max-width: 768px) {
+  .concept__text {
+    font-size: 3rem;
+  }
 }
 
 .contact {
@@ -501,6 +577,11 @@ select::-ms-expand {
   width: 100%;
   margin: 0 auto;
   padding: 25px;
+}
+@media screen and (max-width: 768px) {
+  .contact__inner {
+    padding: 20px;
+  }
 }
 
 .contact__contents {
@@ -516,6 +597,11 @@ select::-ms-expand {
 
 .contact__message {
   font-family: "ab-kinmokusei-kuro", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .contact__message {
+    font-size: 3rem;
+  }
 }
 
 .contact__button {
@@ -592,13 +678,14 @@ select::-ms-expand {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 12px;
-  padding: 0 0.75rem;
+  padding: 0 24px;
+  padding: 0 1.5rem;
   position: relative;
 }
 @media screen and (max-width: 768px) {
   .footer__nav-item a {
     padding-top: 0.75rem;
+    font-size: 2rem;
   }
 }
 
@@ -625,6 +712,12 @@ select::-ms-expand {
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
 }
+@media screen and (max-width: 768px) {
+  .hamburger span {
+    width: 5rem;
+    height: 1rem;
+  }
+}
 
 .hamburger span:nth-child(1) {
   top: 0;
@@ -633,6 +726,11 @@ select::-ms-expand {
 .hamburger span:nth-child(2) {
   margin: 5px 0;
   margin: 0.3125rem 0;
+}
+@media screen and (max-width: 768px) {
+  .hamburger span:nth-child(2) {
+    margin: 1rem 0;
+  }
 }
 
 .hamburger span:nth-child(3) {
@@ -647,6 +745,11 @@ top
   top: 0.6375rem;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+@media screen and (max-width: 768px) {
+  .hamburger.is-open span:nth-child(1) {
+    top: 3.5rem;
+  }
 }
 
 .hamburger.is-open span:nth-child(2) {
@@ -676,7 +779,7 @@ top
 }
 @media screen and (max-width: 768px) {
   .header {
-    height: 50px;
+    height: 80px;
   }
 }
 
@@ -688,6 +791,11 @@ top
   padding: 0 1rem;
   height: inherit;
 }
+@media screen and (max-width: 768px) {
+  .header__inner {
+    padding: 0 2rem;
+  }
+}
 
 .header__logo {
   width: 80px;
@@ -698,6 +806,11 @@ top
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .header__logo {
+    width: 8.125rem;
+  }
 }
 
 .header__pc-nav {
@@ -766,7 +879,7 @@ top
     display: inline-block;
     padding: 3.125rem 0;
     text-align: center;
-    font-size: 2rem;
+    font-size: 5rem;
   }
 }
 
@@ -809,6 +922,12 @@ top
   padding-top: 3.125rem;
   background-color: rgb(28, 18, 223);
 }
+@media screen and (max-width: 768px) {
+  .mv {
+    padding-top: 5rem;
+  }
+}
+
 .mv__content {
   text-align: center;
   padding: 80px;
@@ -823,6 +942,11 @@ top
   font-size: 3.5rem;
   font-weight: 400;
 }
+@media screen and (max-width: 768px) {
+  .mv__title {
+    font-size: 7.5rem;
+  }
+}
 
 .mv__message {
   margin-top: 32px;
@@ -830,6 +954,11 @@ top
   color: #fff;
   font-size: 24px;
   font-size: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .mv__message {
+    font-size: 3rem;
+  }
 }
 
 .pagination {
@@ -858,6 +987,11 @@ top
   border: 0.125rem solid #111;
   padding: 8px 16px;
   padding: 0.5rem 1rem;
+}
+@media screen and (max-width: 768px) {
+  .page-numbers li {
+    padding: 1.5rem 3rem;
+  }
 }
 
 .page-numbers li:hover {
@@ -889,6 +1023,11 @@ top
   -webkit-transform: translate(-100px, -50px);
           transform: translate(-100px, -50px);
 }
+@media screen and (max-width: 768px) {
+  .section-title__index {
+    font-size: 6.5rem;
+  }
+}
 
 .section-title__sub {
   font-size: 12px;
@@ -918,6 +1057,12 @@ top
   margin: 0 auto;
   padding: 25px;
 }
+@media screen and (max-width: 768px) {
+  .sub-about-me__inner {
+    padding: 20px;
+    margin: 0 auto;
+  }
+}
 
 .sub-about-me__text-box {
   margin: 80px auto 0;
@@ -928,10 +1073,20 @@ top
   max-width: 37.5rem;
   width: 100%;
 }
+@media screen and (max-width: 768px) {
+  .sub-about-me__text-box {
+    margin: 2.5rem auto;
+  }
+}
 
 .sub-about-me__title {
   font-size: 40px;
   font-size: 2.5rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-about-me__title {
+    font-size: 5rem;
+  }
 }
 
 .sub-about-me__text {
@@ -947,6 +1102,21 @@ top
   padding-bottom: 1.5625rem;
   font-family: "ab-kinmokusei-kuro", sans-serif;
 }
+@media screen and (max-width: 768px) {
+  .sub-about-me__text {
+    font-size: 3rem;
+  }
+}
+
+.sub-about-me__text li {
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-about-me__text li {
+    margin-top: 2rem;
+  }
+}
 
 .sub-contact__inner {
   max-width: 900px;
@@ -955,12 +1125,23 @@ top
   margin: 0 auto;
   padding: 25px;
 }
+@media screen and (max-width: 768px) {
+  .sub-contact__inner {
+    padding: 20px;
+  }
+}
 
 .sub-contact__message {
   margin-top: 32px;
   margin-top: 2rem;
   text-align: center;
   font-family: "ab-kinmokusei-kuro", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  .sub-contact__message {
+    font-size: 3.5rem;
+    white-space: nowrap;
+  }
 }
 
 .sub-contact__items {
@@ -976,6 +1157,11 @@ top
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .sub-contact__items {
+    margin-top: 6.5rem;
+  }
 }
 
 .sub-contact__item {
@@ -1015,6 +1201,11 @@ top
   margin-top: 2rem;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .sub-contact__button-area {
+    margin-top: 5rem;
+  }
+}
 
 .sub-contact__button {
   padding: 24px 64px;
@@ -1022,6 +1213,12 @@ top
   color: #fff;
   background-color: blue;
   border-radius: 0.625rem;
+}
+@media screen and (max-width: 768px) {
+  .sub-contact__button {
+    padding: 2rem 6rem;
+    font-size: 4rem;
+  }
 }
 
 .sub-contact__item + .sub-contact__item {
@@ -1044,6 +1241,7 @@ top
     width: 10rem;
     white-space: nowrap;
     padding-top: 1.25rem;
+    font-size: 3rem;
   }
 }
 
@@ -1066,6 +1264,11 @@ top
   width: 100%;
   margin: 0 auto;
   padding: 25px;
+}
+@media screen and (max-width: 768px) {
+  .sub-works__inner {
+    padding: 20px;
+  }
 }
 
 .sub-works__contains {
@@ -1117,6 +1320,11 @@ top
   font-size: 32px;
   font-size: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .sub-works__title {
+    font-size: 4.5rem;
+  }
+}
 
 .sub-works__lists {
   margin-top: 32px;
@@ -1144,6 +1352,11 @@ top
   font-size: 24px;
   font-size: 1.5rem;
 }
+@media screen and (max-width: 768px) {
+  .sub-works__sub-title {
+    font-size: 4rem;
+  }
+}
 
 .sub-works__text {
   text-align: left;
@@ -1151,6 +1364,7 @@ top
 @media screen and (max-width: 768px) {
   .sub-works__text {
     margin-top: 1rem;
+    font-size: 3rem;
   }
 }
 
@@ -1158,6 +1372,11 @@ top
   margin-top: 48px;
   margin-top: 3rem;
   text-align: left;
+}
+@media screen and (max-width: 768px) {
+  .sub-works__comment {
+    font-size: 3rem;
+  }
 }
 
 .works {
@@ -1170,6 +1389,11 @@ top
   width: 100%;
   margin: 0 auto;
   padding: 25px;
+}
+@media screen and (max-width: 768px) {
+  .works__inner {
+    padding: 20px;
+  }
 }
 
 .works__items {
@@ -1252,7 +1476,7 @@ top
 }
 @media screen and (max-width: 768px) {
   .works__button {
-    margin-top: 3.5rem;
+    margin-top: 6rem;
   }
 }
 /*# sourceMappingURL=styles.css.map */

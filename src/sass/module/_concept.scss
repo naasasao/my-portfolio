@@ -9,6 +9,10 @@
     width: 100%;
     margin: 0 auto;
     padding: $padding-pc;
+    @include mq('md') {
+        padding: $padding-sp; 
+ 
+    }
 }
 
 .concept__contents {
@@ -54,9 +58,16 @@
 .concept__heading {
     font-size: rem(28);
     color: blue;
+    @include mq('md') {
+       font-size: rem(64); 
+       text-align: center;
+    }
 }
 
 .concept__text {
     padding-top: rem(24);
     font-size: rem(18);
+    @include mq('md') {
+       font-size: rem(48); 
+    }
 }

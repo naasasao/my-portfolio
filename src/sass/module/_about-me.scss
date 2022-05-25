@@ -9,6 +9,9 @@
     width: 100%;
     margin: 0 auto;
     padding: $padding-pc;
+    @include mq('md') {
+        padding: $padding-sp; 
+    }
 }
 
 .about-me__contents {
@@ -49,19 +52,33 @@
 
 .about-me__title {
     @include mq('md') {
-        padding-top: rem(24); 
+        margin-top: rem(64); 
+        font-size: rem(64);
      } 
+}
+
+.about-me__title:nth-child(2) {
+    @include mq('md') {
+       margin-top: rem(32); 
+    }
 }
 
 .about-me__coding,
 .about-me__design {
     padding-left: rem(8);
+    font-size: rem(48);
 }
 
 .about-me__button {
     margin-top: rem(48);
     text-align: center;
     @include mq('md') {
-       margin-top: rem(56); 
+       margin-top: rem(96); 
+    }
+}
+
+.about-me__text {
+    @include mq('md') {
+       font-size: rem(48); 
     }
 }

@@ -8,6 +8,10 @@
     border-radius: rem(24);
     padding: rem(8) rem(32);
     font-family: $base-font-family;
+    @include mq('md') {
+       padding: rem(32) rem(96); 
+       font-size: rem(64);
+    }
 }
 
 .button:hover {

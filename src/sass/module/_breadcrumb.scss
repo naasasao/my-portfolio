@@ -7,6 +7,9 @@
 
 .breadcrumb__lists {
     display: flex;
+    @include mq('md') {
+       font-size: rem(40); 
+    }
 }
 
 .breadcrumb__list {

@@ -9,6 +9,9 @@
     width: 100%;
     margin: 0 auto;
     padding: $padding-pc;
+    @include mq('md') {
+        padding: $padding-sp; 
+    }
 }
 
 .works__items {
@@ -68,6 +71,6 @@
     margin-top: rem(48);
     text-align: center;
     @include mq('md') {
-       margin-top: rem(56); 
+       margin-top: rem(96); 
     }
 }

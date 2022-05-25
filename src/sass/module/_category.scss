@@ -7,6 +7,9 @@
 .category-layout {
     margin-top: rem(40);
     margin-left: rem(30);
+    @include mq('md') {
+       margin-top: rem(88); 
+    }
 }
 
 .category__inner {
@@ -14,9 +17,16 @@
     width: 100%;
     margin: 0 auto;
     display: flex;
+    @include mq('md') {
+       flex-direction: column; 
+    }
 }
 
 .category__data {
     display: inline-block;
     margin-left: rem(30);
+    @include mq('md') {
+       padding-top: rem(24); 
+       font-size: rem(48);
+    }
 }

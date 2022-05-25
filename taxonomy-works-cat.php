@@ -29,22 +29,16 @@
 <div class="category category-layout">
     <div class="category__inner">
 
-        <a class="category__content" href="/works">
+        <a class="category__data" href="/works">
         ALL(WORKS一覧)
         <a>
 
         <?php
                     $terms = get_terms('works-cat', array('hide_empty'=>false));
                     foreach ($terms as $term) {
-                    echo '<a href="' . esc_url(get_term_link($term->slug, 'works-cat')) . '" class="breadcrumb__list">' . $term->name . '</a>';
+                    echo '<a href="' . esc_url(get_term_link($term->slug, 'works-cat')) . '" class="category__data">' . $term->name . '</a>';
                     }
             ?>
-        <!-- <?php
-            if(has_term('','works-cat',$post->ID)) {
-                echo get_the_term_list($post->ID,'works-cat','<span class="category__data">','</span><span class="category__data">','</span>');
-            }
-        ?> -->
-
     </div>
 </div>
 

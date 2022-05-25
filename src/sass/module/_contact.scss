@@ -10,6 +10,9 @@
     width: 100%;
     margin: 0 auto;
     padding: $padding-pc;
+    @include mq('md') {
+        padding: $padding-sp;  
+    }
 }
 
 .contact__contents {
@@ -20,6 +23,9 @@
 
 .contact__message {
     font-family: $second-font-family;
+    @include mq('md') {
+       font-size: rem(48); 
+    }
 }
 
 .contact__button {

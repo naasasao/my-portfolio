@@ -20,6 +20,9 @@
    margin-left: rem(20);
    border: rem(2) solid $black;
    padding: rem(8) rem(16);
+   @include mq('md') {
+      padding: rem(24) rem(48);
+   }
 }
 
 .page-numbers li:hover {

@@ -9,6 +9,10 @@
     width: 100%;
     margin: 0 auto;
     padding: $padding-pc;
+    @include mq('md') {
+       padding:  $padding-sp;
+       margin: 0 auto;
+    }
 }
 
 .sub-about-me__text-box {
@@ -16,10 +20,16 @@
     border: rem(5) solid $accent;
     max-width: rem(600);
     width: 100%;
+    @include mq('md') {
+       margin: rem(40) auto; 
+    }
 }
 
 .sub-about-me__title {
     font-size: rem(40);
+    @include mq('md') {
+       font-size: rem(80); 
+    }
 }
 
 .sub-about-me__text {
@@ -29,4 +39,15 @@
     padding-right: rem(25);
     padding-bottom: rem(25);
     font-family: $second-font-family;
+    @include mq('md') {
+       font-size: rem(48); 
+    }
 }
+
+.sub-about-me__text li {
+    margin-top: rem(24);
+    @include mq('md') {
+       margin-top: rem(32); 
+    }
+}
+

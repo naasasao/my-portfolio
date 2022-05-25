@@ -9,6 +9,9 @@
     width: 100%;
     margin: 0 auto;
     padding: $padding-pc;
+    @include mq('md') {
+        padding: $padding-sp;  
+    }
 }
 
 .archive-works__items {
@@ -80,5 +83,8 @@
     text-align: center;
     font-size: rem(24);
     font-family: $second-font-family;
+    @include mq('md') {
+       font-size: rem(64); 
+    }
 }
 
