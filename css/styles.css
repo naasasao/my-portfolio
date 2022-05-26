@@ -704,7 +704,7 @@ select::-ms-expand {
 }
 @media screen and (max-width: 768px) {
   .footer__nav-item > .footer__logo-link img {
-    width: 6.25rem;
+    width: 5.5rem;
   }
 }
 
