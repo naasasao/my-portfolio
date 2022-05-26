@@ -27,7 +27,7 @@ $contact = esc_url(home_url('/contact/'));
   <meta property="og:description" content="ポートフォリオサイト" />
 
   <!-- ファビコン -->
-  <link rel="”icon”" href="<?php echo get_template_directory_uri(); ?>/images/sitelogo.png" />
+  <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/images/sitelogo.png" />
 
   <!-- Adobeの日本語フォント -->
   <script>

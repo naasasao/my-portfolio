@@ -13,7 +13,7 @@ $contact = esc_url(home_url('/contact/'));
     <ul class="footer__nav">
         <li class="footer__nav-item">
             <a href="<?php echo esc_url( home_url('/')); ?>" class="footer__logo-link">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/sitelogo.png" alt="ヘッダーロゴ">
+            <img src="<?php echo get_template_directory_uri(); ?>/images/sitelogo.png" alt="フッターロゴ">
           </a>
         </li>
         <li class="footer__nav-item"><a href="<?php echo $about ?>">ABOUT ME</a></li>

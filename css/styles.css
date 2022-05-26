@@ -687,20 +687,25 @@ select::-ms-expand {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 24px;
-  padding: 0 1.5rem;
+  padding: 8px 24px;
+  padding: 0.5rem 1.5rem;
   position: relative;
 }
 @media screen and (max-width: 768px) {
   .footer__nav-item a {
     padding-top: 0.75rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
-.footer__logo-link {
-  width: 120px;
-  width: 7.5rem;
+.footer__nav-item > .footer__logo-link img {
+  width: 48px;
+  width: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .footer__nav-item > .footer__logo-link img {
+    width: 6.25rem;
+  }
 }
 
 .hamburger {
