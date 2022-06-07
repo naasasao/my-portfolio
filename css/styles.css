@@ -725,7 +725,7 @@ select::-ms-expand {
   height: 0.25rem;
   width: 32px;
   width: 2rem;
-  background: blue;
+  background: #287DC0;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
 }
