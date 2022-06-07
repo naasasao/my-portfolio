@@ -51,7 +51,7 @@
 }
 
 .header__pc-nav__item a {
-    color: blue;
+    color: $text;
     height: inherit;
     font-size: rem(16);
     display: flex;
@@ -75,7 +75,7 @@
         position: relative;
         z-index: 1111;
         background-color: $accent;
-        color: $black;
+        color: $text;
         height: 100vh;
         width: 81vw;
         padding-top: rem(100);

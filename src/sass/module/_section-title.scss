@@ -9,7 +9,19 @@
 
 .section-title__index {
     font-size: rem(48);
-    color: blue;
+    color: $accent;
+    opacity: 0;
+    transition-duration: 500ms;
+    transition-property: opacity, transform;
+    transform: translate(-100px, -50px);
+    @include mq('md') {
+       font-size: rem(104); 
+    }
+}
+
+.section-title__index--white {
+    font-size: rem(48);
+    color: $white;
     opacity: 0;
     transition-duration: 500ms;
     transition-property: opacity, transform;
@@ -21,7 +33,7 @@
 
 .section-title__sub {
     font-size: rem(24);
-    color: blue;
+    color: $accent;
     opacity: 0;
     transition-duration: 500ms;
     transition-property: opacity, transform;

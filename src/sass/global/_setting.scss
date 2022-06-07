@@ -17,7 +17,7 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family:  "swing-king", sans-serif;
+$base-font-family:  'Noto Sans JP', sans-serif;
 $second-font-family: "ab-kinmokusei-kuro", sans-serif;
 $third-ff: "";
 
@@ -39,8 +39,10 @@ $bold: 700;
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #111;
 $white: #fff;
-$accent: yellow;
-$sub-accent: rgb(228, 244, 249);
+$main: #fab1ce;
+$accent: #fcee5b;
+$sub-accent: #CFE8ED;
+$text: #287DC0;
 
 
 ////////////////////

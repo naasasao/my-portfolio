@@ -39,13 +39,13 @@
                 <li>ABBA</li>
                 <li>EDM</li>
                 <li>BlueGrass<br class="u-desktop">（大学時代はGuitar/Vocal）</li>
-                <li>Discovery Channel<br class="u-desktop">（「名車再生！クラシックカー・ディラーズ」etc）</li>
+                <li>Discovery Channel<br class="u-desktop">（「名車再生！クラシックカー・ディーラーズ」etc）</li>
               </ul>
           </div>
           <div class="sub-about-me__text-box">
               <div class="sub-about-me__title">Background</div>
               <p class="sub-about-me__text">
-                  小学4年生から高校3年生まで吹奏楽部でトロンボーン（6年間）とフレンチホルン（3年間）を担当していました。今もたまにトロンボーンを吹いています。金管が好きです。
+                  小学4年生から高校3年生まで吹奏楽部でトロンボーン（6年間）とフレンチホルン（3年間）を担当していました。今もたまにトロンボーンを吹いています。
               </p>
           </div>
        </div>

@@ -5,7 +5,7 @@
 }
 
 .sub-contact__inner {
-    max-width: rem(900);
+    max-width: rem(700);
     width: 100%;
     margin: 0 auto;
     padding: $padding-pc;
@@ -17,9 +17,8 @@
 .sub-contact__message {
     margin-top: rem(32);
     text-align: center;
-    font-family: $second-font-family;
     @include mq('md') {
-       font-size: rem(56); 
+       font-size: rem(48); 
        white-space: nowrap;
     }
 }
@@ -43,15 +42,14 @@
 }
 
 .sub-contact__item input {
-    margin-top: rem(16);
     border: rem(2) solid $black;
     background-color: $white;
     color: #979797;
-    font-size: rem(14);
+    font-size: rem(24);
     width: 100%;
     padding: rem(8) rem(8);
     @include mq('md') {
-       padding: rem(32) rem(24); 
+       padding: rem(16) rem(24); 
     }
 }
 
@@ -66,7 +64,7 @@
 .sub-contact__button {
     padding: rem(24) rem(64);
     color: $white;
-    background-color: blue;
+    background-color: $text;
     border-radius: rem(10);
     @include mq('md') {
         padding: rem(32) rem(96); 
@@ -91,13 +89,12 @@
        width: rem(160); 
        white-space: nowrap;
        padding-top: rem(20);
-       font-size: rem(48);
+       font-size: rem(36);
     }
 }
 
 
 .sub-contact__item textarea {
-    margin-top: rem(16);
     background-color: $white;
     color: #979797;
     font-size: rem(14);

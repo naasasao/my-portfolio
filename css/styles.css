@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  font-family: "swing-king", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .u-desktop {
@@ -210,7 +210,6 @@ select::-ms-expand {
   padding-left: 32px;
   padding-left: 2rem;
   width: 60%;
-  font-family: "ab-kinmokusei-kuro", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .about-me__explain {
@@ -338,8 +337,8 @@ select::-ms-expand {
 .archive-works__image {
   width: 100%;
   position: relative;
-  border: 4px solid rgb(228, 244, 249);
-  border: 0.25rem solid rgb(228, 244, 249);
+  border: 4px solid #CFE8ED;
+  border: 0.25rem solid #CFE8ED;
 }
 
 .archive-works__image::before {
@@ -416,12 +415,12 @@ select::-ms-expand {
   display: inline-block;
   font-size: 24px;
   font-size: 1.5rem;
-  color: #fff;
-  background-color: blue;
+  color: #287DC0;
+  background-color: #fcee5b;
   border-radius: 1.5rem;
   padding: 8px 32px;
   padding: 0.5rem 2rem;
-  font-family: "swing-king", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .button {
@@ -431,8 +430,8 @@ select::-ms-expand {
 }
 
 .button:hover {
-  background-color: yellow;
-  color: blue;
+  background-color: #fab1ce;
+  color: #fff;
 }
 
 .category {
@@ -544,7 +543,6 @@ select::-ms-expand {
   width: 50%;
   padding: 32px;
   padding: 2rem;
-  font-family: "ab-kinmokusei-kuro", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .concept__textBox {
@@ -555,7 +553,7 @@ select::-ms-expand {
 .concept__heading {
   font-size: 28px;
   font-size: 1.75rem;
-  color: blue;
+  color: #287DC0;
 }
 @media screen and (max-width: 768px) {
   .concept__heading {
@@ -577,7 +575,7 @@ select::-ms-expand {
 }
 
 .contact {
-  background-color: rgb(228, 244, 249);
+  background-color: #CFE8ED;
 }
 
 .contact__inner {
@@ -605,7 +603,7 @@ select::-ms-expand {
 }
 
 .contact__message {
-  font-family: "ab-kinmokusei-kuro", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .contact__message {
@@ -632,7 +630,7 @@ select::-ms-expand {
 }
 
 .footer {
-  background-color: blue;
+  background-color: #fab1ce;
   color: #fff;
   z-index: 11111;
   width: 100%;
@@ -785,7 +783,7 @@ top
 }
 
 .header {
-  background-color: rgb(228, 244, 249);
+  background-color: #CFE8ED;
   z-index: 11111;
   width: 100%;
   -webkit-transition: background-color 0.8s;
@@ -852,7 +850,7 @@ top
 }
 
 .header__pc-nav__item a {
-  color: blue;
+  color: #287DC0;
   height: inherit;
   font-size: 16px;
   font-size: 1rem;
@@ -883,10 +881,10 @@ top
   .header__sp-nav__items {
     position: relative;
     z-index: 1111;
-    background-color: yellow;
-    color: #111;
+    background-color: #fcee5b;
+    color: #287DC0;
     height: 100vh;
-    width: 85vw;
+    width: 81vw;
     padding-top: 6.25rem;
   }
 }
@@ -939,7 +937,7 @@ top
 .mv {
   padding-top: 50px;
   padding-top: 3.125rem;
-  background-color: rgb(28, 18, 223);
+  background-color: #fab1ce;
 }
 @media screen and (max-width: 768px) {
   .mv {
@@ -959,7 +957,7 @@ top
   color: #fff;
   font-size: 56px;
   font-size: 3.5rem;
-  font-weight: 400;
+  font-weight: 700;
 }
 @media screen and (max-width: 768px) {
   .mv__title {
@@ -978,10 +976,6 @@ top
   .mv__message {
     font-size: 3rem;
   }
-}
-
-.pagination {
-  font-family: "ab-kinmokusei-kuro", sans-serif;
 }
 
 .pagination__inner {
@@ -1015,7 +1009,7 @@ top
 }
 
 .page-numbers li:hover {
-  background-color: yellow;
+  background-color: #fcee5b;
 }
 
 .section-layout {
@@ -1042,7 +1036,7 @@ top
 .section-title__index {
   font-size: 48px;
   font-size: 3rem;
-  color: blue;
+  color: #fcee5b;
   opacity: 0;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
@@ -1059,10 +1053,30 @@ top
   }
 }
 
+.section-title__index--white {
+  font-size: 48px;
+  font-size: 3rem;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: opacity, transform;
+  transition-property: opacity, transform, -webkit-transform;
+  -webkit-transform: translate(-100px, -50px);
+          transform: translate(-100px, -50px);
+}
+@media screen and (max-width: 768px) {
+  .section-title__index--white {
+    font-size: 6.5rem;
+  }
+}
+
 .section-title__sub {
   font-size: 24px;
   font-size: 1.5rem;
-  color: blue;
+  color: #fcee5b;
   opacity: 0;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
@@ -1102,11 +1116,10 @@ top
 .sub-about-me__text-box {
   margin: 80px auto 0;
   margin: 5rem auto 0;
-  border: 5px solid yellow;
-  border: 0.3125rem solid yellow;
   max-width: 600px;
   max-width: 37.5rem;
   width: 100%;
+  background-color: #CFE8ED;
 }
 @media screen and (max-width: 768px) {
   .sub-about-me__text-box {
@@ -1117,6 +1130,7 @@ top
 .sub-about-me__title {
   font-size: 40px;
   font-size: 2.5rem;
+  color: #287DC0;
 }
 @media screen and (max-width: 768px) {
   .sub-about-me__title {
@@ -1135,7 +1149,6 @@ top
   padding-right: 1.5625rem;
   padding-bottom: 25px;
   padding-bottom: 1.5625rem;
-  font-family: "ab-kinmokusei-kuro", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .sub-about-me__text {
@@ -1154,8 +1167,8 @@ top
 }
 
 .sub-contact__inner {
-  max-width: 900px;
-  max-width: 56.25rem;
+  max-width: 700px;
+  max-width: 43.75rem;
   width: 100%;
   margin: 0 auto;
   padding: 25px;
@@ -1170,11 +1183,10 @@ top
   margin-top: 32px;
   margin-top: 2rem;
   text-align: center;
-  font-family: "ab-kinmokusei-kuro", sans-serif;
 }
 @media screen and (max-width: 768px) {
   .sub-contact__message {
-    font-size: 3.5rem;
+    font-size: 3rem;
     white-space: nowrap;
   }
 }
@@ -1218,21 +1230,19 @@ top
 }
 
 .sub-contact__item input {
-  margin-top: 16px;
-  margin-top: 1rem;
   border: 2px solid #111;
   border: 0.125rem solid #111;
   background-color: #fff;
   color: #979797;
-  font-size: 14px;
-  font-size: 0.875rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   width: 100%;
   padding: 8px 8px;
   padding: 0.5rem 0.5rem;
 }
 @media screen and (max-width: 768px) {
   .sub-contact__item input {
-    padding: 2rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
 }
 
@@ -1251,7 +1261,7 @@ top
   padding: 24px 64px;
   padding: 1.5rem 4rem;
   color: #fff;
-  background-color: blue;
+  background-color: #287DC0;
   border-radius: 0.625rem;
 }
 @media screen and (max-width: 768px) {
@@ -1281,13 +1291,11 @@ top
     width: 10rem;
     white-space: nowrap;
     padding-top: 1.25rem;
-    font-size: 3rem;
+    font-size: 2.25rem;
   }
 }
 
 .sub-contact__item textarea {
-  margin-top: 16px;
-  margin-top: 1rem;
   background-color: #fff;
   color: #979797;
   font-size: 14px;
@@ -1319,8 +1327,8 @@ top
 .sub-works__image {
   width: 100%;
   position: relative;
-  border: 2px solid rgb(228, 244, 249);
-  border: 0.125rem solid rgb(228, 244, 249);
+  border: 2px solid #CFE8ED;
+  border: 0.125rem solid #CFE8ED;
 }
 
 .sub-works__image::before {
@@ -1420,7 +1428,7 @@ top
 }
 
 .works {
-  background-color: rgb(228, 244, 249);
+  background-color: #CFE8ED;
 }
 
 .works__inner {

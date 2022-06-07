@@ -22,7 +22,7 @@
 }
 
 .contact__message {
-    font-family: $second-font-family;
+    font-family: $base-font-family;
     @include mq('md') {
        font-size: rem(48); 
     }

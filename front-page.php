@@ -73,7 +73,7 @@ $contact = esc_url(home_url('/contact/'));
 <!-- works -->
 <section class="works section-layout">
   <div class="section-title">
-    <h2 class="section-title__index fade-in">WORKS</h2>
+    <h2 class="section-title__index section-title__index--white fade-in">WORKS</h2>
   </div>
   <div class="works__inner">
     

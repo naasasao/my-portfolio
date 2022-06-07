@@ -5,16 +5,16 @@
 </div>
 
 <form class="sub-contact section-layout">
+    
+    <div class="section-title">
+        <h2 class="section-title__index fade-in">CONTACT</h2>
+    </div>
+    
+    <h3 class="sub-contact__message">お気軽にお問い合わせください！</h3>
+    
     <div class="sub-contact__inner">
-
-        <div class="section-title">
-            <h2 class="section-title__index fade-in">CONTACT</h2>
-        </div>
-
-        <h3 class="sub-contact__message">お気軽にお問い合わせください！</h3>
-
+        
         <div class="sub-contact__items" action="confirm.php" method="post" name="form" id="contact">
-
 
         <?php if (have_posts()) : ?>
                 <?php while (have_posts()) : the_post(); ?>

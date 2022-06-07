@@ -48,7 +48,6 @@
 .concept__textBox {
     width: 50%;
     padding: rem(32);
-    font-family: $second-font-family;
     @include mq('md') {
         width: 100%; 
      } 
@@ -57,7 +56,7 @@
 
 .concept__heading {
     font-size: rem(28);
-    color: blue;
+    color: $text;
     @include mq('md') {
        font-size: rem(64); 
        text-align: center;
